@@ -29,7 +29,7 @@ export interface Experience {
   description: LocalizedField<string>;
   achievements: LocalizedField<string[]>;
   startDate: string;
-  endDate: string;
+  endDate: LocalizedField<string>;
   education?: LocalizedField<string>;
   promotionPath?: LocalizedField<string[]>;
   promotionMonth?: LocalizedField<string>;

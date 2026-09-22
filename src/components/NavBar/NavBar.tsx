@@ -51,6 +51,7 @@ const NavBar = () => {
 
     const updateActiveSection = () => {
       frameId = undefined;
+      if (toggled) return;
       const activationLine = window.innerHeight * 0.3;
       const sections = sectionIds
         .map((id) => document.getElementById(id))
@@ -93,7 +94,7 @@ const NavBar = () => {
       mutationObserver?.disconnect();
       if (frameId !== undefined) window.cancelAnimationFrame(frameId);
     };
-  }, []);
+  }, [toggled]);
 
   useEffect(() => {
     if (!toggled) return;
@@ -170,6 +171,9 @@ const NavBar = () => {
               width="44"
               height="44"
             />
+            <span className="navbar-brand-name" aria-hidden="true">
+              Bartosz Litwa
+            </span>
           </Navbar.Brand>
 
           <Navbar.Toggle
@@ -187,6 +191,7 @@ const NavBar = () => {
                 <Nav.Link
                   key={item.href}
                   href={item.href}
+                  active={activeLink === item.href}
                   className={`navbar-link ${activeLink === item.href ? 'active' : ''}`}
                   onClick={() => onUpdateActiveLink(item.href)}
                   aria-current={activeLink === item.href ? 'page' : undefined}

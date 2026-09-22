@@ -20,6 +20,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   const education = experience.education
     ? resolveLocalizedField(experience.education, language)
     : undefined;
+  const endDate = resolveLocalizedField(experience.endDate, language);
   const [failedLogoUrl, setFailedLogoUrl] = useState<string | null>(null);
   const logoAvailable = Boolean(experience.companyLogo) && failedLogoUrl !== experience.companyLogo;
 
@@ -58,13 +59,13 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
         </div>
         <div
           className="experienceCard-period"
-          aria-label={`${t('experience.aria.roleTimeline')} ${experience.startDate} ${t('experience.aria.to')} ${experience.endDate}`}
+          aria-label={`${t('experience.aria.roleTimeline')} ${experience.startDate} ${t('experience.aria.to')} ${endDate}`}
         >
           <span className="experienceCard-date">{experience.startDate}</span>
           <span className="period-separator" aria-hidden="true">
             -
           </span>
-          <span className="experienceCard-date">{experience.endDate}</span>
+          <span className="experienceCard-date">{endDate}</span>
         </div>
       </header>
       <div className="experienceCard-details">

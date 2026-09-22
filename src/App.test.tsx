@@ -82,6 +82,7 @@ describe('App', () => {
     await user.click(polishOption);
 
     expect(await screen.findByRole('link', { name: /Doświadczenie/i })).toBeInTheDocument();
+    expect(document.title).toBe('Bartosz Litwa — Twórca firmy AI-native');
   });
 
   it('keeps keyboard focus predictable for the skip link and language menu', async () => {
@@ -163,6 +164,25 @@ describe('App', () => {
           'page'
         )
       );
+
+      await userEvent.setup().click(screen.getByRole('link', { name: 'Experience' }));
+      const menuToggle = screen.getByRole('button', { name: /navigation menu/i });
+      await userEvent.setup().click(menuToggle);
+      window.dispatchEvent(new Event('scroll'));
+      expect(screen.getByRole('link', { name: 'Experience' })).toHaveAttribute(
+        'aria-current',
+        'page'
+      );
+      await userEvent.setup().click(menuToggle);
+      window.dispatchEvent(new Event('scroll'));
+      await waitFor(() =>
+        expect(screen.getByRole('link', { name: 'Company' })).toHaveAttribute(
+          'aria-current',
+          'page'
+        )
+      );
+      await waitFor(() => expect(document.querySelectorAll('.navbar-link.active')).toHaveLength(1));
+      expect(screen.getByRole('link', { name: 'Company' })).toHaveClass('active');
     } finally {
       rectSpy.mockRestore();
       if (originalScrollY) Object.defineProperty(window, 'scrollY', originalScrollY);
@@ -190,5 +210,22 @@ describe('App', () => {
 
     expect(document.body).toHaveClass('host-shell', 'dark-theme');
     expect(document.documentElement).toHaveAttribute('data-theme', 'dark');
+  });
+
+  it('renders when browser storage is unavailable', () => {
+    const read = vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new Error('Storage unavailable');
+    });
+    const write = vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+      throw new Error('Storage unavailable');
+    });
+
+    try {
+      render(<App />);
+      expect(screen.getByRole('heading', { level: 1, name: /Bartosz Litwa/i })).toBeInTheDocument();
+    } finally {
+      read.mockRestore();
+      write.mockRestore();
+    }
   });
 });

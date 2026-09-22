@@ -176,6 +176,14 @@ test.describe('portfolio journeys', () => {
     await expect(page.locator('html')).toHaveAttribute('lang', 'pl');
     await expect(page.locator('.language-toggle-btn')).toContainText('PL');
     await expect(page.getByRole('link', { name: 'Company', exact: true })).toHaveCount(0);
+    await expect(page).toHaveTitle('Bartosz Litwa — Twórca firmy AI-native');
+    await page.locator('#experience').scrollIntoViewIfNeeded();
+    await expect(
+      page.getByRole('heading', {
+        name: 'Starszy inżynier automatyzacji testów / inżynier Full Stack .NET'
+      })
+    ).toBeVisible();
+    await expect(page.locator('#experience')).toContainText('Obecnie');
     await expect
       .poll(() => page.evaluate(() => localStorage.getItem('preferred-language')))
       .toBe('pl');

@@ -103,4 +103,18 @@ describe('portfolio data', () => {
     expect(new Set(certificationIds).size).toBe(certificationIds.length);
     expect(experience.length).toBeGreaterThan(0);
   });
+
+  it('keeps experience copy bilingual', () => {
+    for (const role of experience) {
+      for (const field of [role.title, role.city, role.description]) {
+        expect(field.en.trim()).not.toBe('');
+        expect(field.pl.trim()).not.toBe('');
+      }
+      expect(role.achievements.en).toHaveLength(role.achievements.pl.length);
+      expect(role.achievements.pl.every((item) => item.trim() !== '')).toBe(true);
+      if ('promotionPath' in role && role.promotionPath) {
+        expect(role.promotionPath.en).toHaveLength(role.promotionPath.pl.length);
+      }
+    }
+  });
 });

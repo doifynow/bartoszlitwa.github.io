@@ -238,7 +238,7 @@
     },
     "hero": {
       "name": "Bartosz Litwa",
-      "badge": "Founder-engineer · Warszawa",
+      "badge": "Założyciel i inżynier · Warszawa",
       "greeting": "Cześć, jestem",
       "currentRoleAria": "Aktualna rola",
       "role": "Buduję firmę AI-native",
@@ -283,7 +283,7 @@
       "stages": {
         "building": "W budowie",
         "active-build": "Aktywnie rozwijany",
-        "discovery": "Discovery i aktywna budowa"
+        "discovery": "Odkrywanie i aktywna budowa"
       },
       "system": {
         "core": "Warstwa firmy",

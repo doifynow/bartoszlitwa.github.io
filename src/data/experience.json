@@ -1,48 +1,88 @@
 [
   {
-    "title": "Senior Test Automation Engineer / Full Stack .NET Engineer",
+    "title": {
+      "en": "Senior Test Automation Engineer / Full Stack .NET Engineer",
+      "pl": "Starszy inżynier automatyzacji testów / inżynier Full Stack .NET"
+    },
     "company": "KPMG",
     "companyLogo": "companyLogos/kpmg.png",
-    "city": "Warsaw, Poland",
-    "education": "Bachelor of Engineering in Computer Science — PJAIT, 2025",
-    "promotionPath": [
-      "Junior .NET Developer II",
-      ".NET Developer III",
-      "Senior Test Automation Engineer"
-    ],
-    "promotionMonth": "Career progression",
-    "description": "Building and testing cloud-native enterprise applications with .NET, Angular, Azure, and Azure DevOps.",
-    "achievements": [
-      "Led a microservice migration from Azure Cosmos DB to Azure SQL with Entity Framework Core, including data migrations and cleanup",
-      "Introduced Cosmos DB container bundling in a multi-tenant application, reducing cost by 90% and improving RU management",
-      "Built Azure Data Factory infrastructure using Azure Functions, Managed Identities, Key Vault, RBAC, Cosmos DB, Azure SQL, and Blob Storage",
-      "Modernized test automation from Selenium in C# toward Playwright with TypeScript"
-    ],
+    "city": { "en": "Warsaw, Poland", "pl": "Warszawa, Polska" },
+    "education": {
+      "en": "Bachelor of Engineering in Computer Science — PJAIT, 2025",
+      "pl": "Inżynier informatyki — PJATK, 2025"
+    },
+    "promotionPath": {
+      "en": ["Junior .NET Developer II", ".NET Developer III", "Senior Test Automation Engineer"],
+      "pl": [
+        "Młodszy programista .NET II",
+        "Programista .NET III",
+        "Starszy inżynier automatyzacji testów"
+      ]
+    },
+    "promotionMonth": { "en": "Career progression", "pl": "Ścieżka awansu" },
+    "description": {
+      "en": "Building and testing cloud-native enterprise applications with .NET, Angular, Azure, and Azure DevOps.",
+      "pl": "Tworzę i testuję aplikacje biznesowe natywne dla chmury, korzystając z .NET, Angular, Azure i Azure DevOps."
+    },
+    "achievements": {
+      "en": [
+        "Led a microservice migration from Azure Cosmos DB to Azure SQL with Entity Framework Core, including data migrations and cleanup",
+        "Introduced Cosmos DB container bundling in a multi-tenant application, reducing cost by 90% and improving RU management",
+        "Built Azure Data Factory infrastructure using Azure Functions, Managed Identities, Key Vault, RBAC, Cosmos DB, Azure SQL, and Blob Storage",
+        "Modernized test automation from Selenium in C# toward Playwright with TypeScript"
+      ],
+      "pl": [
+        "Kierowałem migracją mikrousługi z Azure Cosmos DB do Azure SQL z użyciem Entity Framework Core, obejmującą migrację i porządkowanie danych",
+        "Wprowadziłem współdzielenie kontenerów Cosmos DB w aplikacji wielodostępowej, zmniejszając koszty o 90% i usprawniając zarządzanie jednostkami RU",
+        "Zbudowałem infrastrukturę Azure Data Factory z użyciem Azure Functions, Managed Identities, Key Vault, RBAC, Cosmos DB, Azure SQL i Blob Storage",
+        "Unowocześniłem automatyzację testów, przechodząc z Selenium w C# na Playwright z TypeScript"
+      ]
+    },
     "startDate": "2022-11",
-    "endDate": "Present"
+    "endDate": { "en": "Present", "pl": "Obecnie" }
   },
   {
-    "title": "Junior Full Stack Developer",
+    "title": { "en": "Junior Full Stack Developer", "pl": "Młodszy programista Full Stack" },
     "company": "Coded Projects",
     "companyLogo": "companyLogos/codedProjects.png",
-    "city": "Warsaw, Poland",
-    "description": "Delivered end-to-end web solutions with focus on data visualization and microservices architecture.",
-    "achievements": [
-      "Delivered full-stack data visualization and microservice features with React, TypeScript, C#, ASP.NET Core, and SQL"
-    ],
+    "city": { "en": "Warsaw, Poland", "pl": "Warszawa, Polska" },
+    "description": {
+      "en": "Delivered end-to-end web solutions with focus on data visualization and microservices architecture.",
+      "pl": "Tworzyłem kompleksowe rozwiązania internetowe, koncentrując się na wizualizacji danych i architekturze mikrousług."
+    },
+    "achievements": {
+      "en": [
+        "Delivered full-stack data visualization and microservice features with React, TypeScript, C#, ASP.NET Core, and SQL"
+      ],
+      "pl": [
+        "Tworzyłem funkcje wizualizacji danych i mikrousług z użyciem React, TypeScript, C#, ASP.NET Core i SQL"
+      ]
+    },
     "startDate": "2022-04",
     "endDate": "2022-07"
   },
   {
-    "title": "Junior Software Engineer",
+    "title": {
+      "en": "Junior Software Engineer",
+      "pl": "Młodszy inżynier oprogramowania"
+    },
     "companyLogo": "companyLogos/pzpl.png",
     "company": "Polish Rope Pulling Association",
-    "city": "Warsaw, Poland",
-    "description": "Automated legacy processes and built data migration tools for national sports organization.",
-    "achievements": [
-      "Built a C# integration tool to sort and merge local files for migration to a web service",
-      "Automated repetitive workflows with Excel VBA, reducing manual errors and making data migration 10× faster"
-    ],
+    "city": { "en": "Warsaw, Poland", "pl": "Warszawa, Polska" },
+    "description": {
+      "en": "Automated legacy processes and built data migration tools for national sports organization.",
+      "pl": "Automatyzowałem istniejące procesy i tworzyłem narzędzia do migracji danych dla ogólnopolskiej organizacji sportowej."
+    },
+    "achievements": {
+      "en": [
+        "Built a C# integration tool to sort and merge local files for migration to a web service",
+        "Automated repetitive workflows with Excel VBA, reducing manual errors and making data migration 10× faster"
+      ],
+      "pl": [
+        "Zbudowałem narzędzie integracyjne w C# do sortowania i łączenia plików lokalnych przed migracją do usługi internetowej",
+        "Zautomatyzowałem powtarzalne zadania w Excel VBA, ograniczając błędy ręczne i przyspieszając migrację danych dziesięciokrotnie"
+      ]
+    },
     "startDate": "2021-02",
     "endDate": "2021-05"
   }

@@ -10,8 +10,17 @@ nav.navbar {
 .navbar-brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.55rem;
   min-height: 44px;
   margin-right: 1.5rem;
+}
+
+.navbar-brand-name {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .navbar-brand img {

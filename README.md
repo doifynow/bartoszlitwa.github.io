@@ -78,7 +78,7 @@ checks npm, Docker base images, and GitHub Actions weekly.
 Custom CI and container validation use fleet self-hosted Linux runners. Node setup explicitly
 disables GitHub package-manager caching; neither workflow uploads artifacts to GitHub. Dependabot
 updates remain enabled and use GitHub-hosted runners because
-[GitHub does not support self-hosted Dependabot for public repositories](https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-on-actions-runners).
+[GitHub does not support self-hosted Dependabot for public repositories](https://docs.github.com/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/configure-global-settings#configuring-the-runner-type-for-dependabot).
 FleetSetup owns the organization runner settings and this public-repository exception.
 
 ## Deployment and operations

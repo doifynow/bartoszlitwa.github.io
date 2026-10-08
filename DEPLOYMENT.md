@@ -26,6 +26,9 @@ Chromium runtime with `npx playwright install chromium` before the first local r
 - `predeploy`: `npm run build`
 - `deploy`: `gh-pages -d build`
 
+`gh-pages` is pinned to 6.1.1 because later releases include the unpatched vulnerable `braces`
+dependency. Keep the audit gate passing when reviewing an upgrade.
+
 Deploy after the preflight:
 
 ```bash

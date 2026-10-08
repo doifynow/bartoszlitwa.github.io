@@ -75,6 +75,12 @@ development/build dependencies. Individual commands remain available as `npm run
 GitHub Actions runs the same gate and additionally builds the production container. Dependabot
 checks npm, Docker base images, and GitHub Actions weekly.
 
+Custom CI and container validation use fleet self-hosted Linux runners. Node setup explicitly
+disables GitHub package-manager caching; neither workflow uploads artifacts to GitHub. Dependabot
+updates remain enabled and use GitHub-hosted runners because
+[GitHub does not support self-hosted Dependabot for public repositories](https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-on-actions-runners).
+FleetSetup owns the organization runner settings and this public-repository exception.
+
 ## Deployment and operations
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for GitHub Pages and Docker/Traefik procedures, health checks,

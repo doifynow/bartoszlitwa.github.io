@@ -5,6 +5,8 @@ const baseURL = 'http://127.0.0.1:4178';
 export default defineConfig({
   testDir: './tests/e2e',
   fullyParallel: true,
+  // Bound Chromium resource use on shared self-hosted CI workers.
+  workers: process.env.CI ? 2 : undefined,
   reporter: [['list'], ['html', { open: 'never' }]],
   use: {
     baseURL,

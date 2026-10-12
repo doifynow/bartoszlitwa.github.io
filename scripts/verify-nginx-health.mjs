@@ -4,6 +4,7 @@ import { log } from 'node:console';
 import { randomUUID } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath, URL } from 'node:url';
+import { setTimeout as delay } from 'node:timers/promises';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dockerfile = readFileSync(new URL('../Dockerfile', import.meta.url), 'utf8');
@@ -40,9 +41,25 @@ try {
   }
   requireSuccess(docker(['start', container]));
   requireSuccess(docker(['exec', container, 'nginx', '-t']));
-  const health = requireSuccess(
-    docker(['exec', container, 'wget', '-S', '-O', '-', 'http://127.0.0.1/health'])
-  );
+  // Docker start precedes Nginx's entrypoint setup; wait for its listener.
+  const deadline = Date.now() + 20_000;
+  let health;
+  do {
+    health = docker([
+      'exec',
+      container,
+      'wget',
+      '-T',
+      '1',
+      '-S',
+      '-O',
+      '-',
+      'http://127.0.0.1/health'
+    ]);
+    if (health.status === 0) break;
+    await delay(250);
+  } while (Date.now() < deadline);
+  requireSuccess(health);
   assert.equal(health.stdout, 'healthy\n');
   assert.match(health.stderr, /HTTP\/1\.1 200 OK/);
   assert.match(health.stderr, /Cache-Control: no-store/i);

@@ -21,6 +21,7 @@
     "typecheck": "tsc --noEmit",
     "test": "NODE_ENV=test vitest run",
     "test:watch": "NODE_ENV=test vitest",
+    "test:nginx": "node scripts/verify-nginx-health.mjs",
     "test:coverage": "NODE_ENV=test vitest run --coverage",
     "audit": "npm audit --include=dev --audit-level=high",
     "lint": "eslint .",
@@ -28,7 +29,7 @@
     "format": "prettier \"**/*.{ts,tsx,js,jsx,mjs,json,css,md,html,yml,yaml}\" --write",
     "format:check": "prettier \"**/*.{ts,tsx,js,jsx,mjs,json,css,md,html,yml,yaml}\" --check",
     "test:e2e": "playwright test",
-    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test:coverage && npm run build && npm run test:e2e && npm run audit",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test:coverage && npm run build && npm run test:nginx && npm run test:e2e && npm run audit",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

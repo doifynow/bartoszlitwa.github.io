@@ -58,12 +58,18 @@ docker compose -f compose/docker-compose.yml up -d
 ```
 
 The host diagnostic port is bound only to `127.0.0.1:10580`; public traffic must enter through
-Traefik. The HTTP router permanently redirects to HTTPS. Nginx serves the SPA and security headers,
+Traefik. The HTTP router permanently redirects to HTTPS. Nginx serves static files and security headers,
 while Compose supplies a read-only filesystem with explicit temporary mounts, resource limits, a
 health check, `no-new-privileges`, and bounded JSON logs.
 
 `compose/docker-compose.webapp.yml` is a compatibility mirror. Until it is consolidated, every
 service change must be applied to both files and both must pass `docker compose config`.
+
+Unknown or removed paths must return HTTP 404, not the homepage with HTTP 200. Navigation uses
+root hash anchors, so it does not require a catch-all SPA fallback. Verify `/`, `/sitemap.xml`,
+`/robots.txt`, a fingerprinted asset, and an unknown path after each rollout.
+With Nginx installed locally, run `python3 tests/routing/nginx_routes.py` after the build to verify
+the repository configuration on an isolated localhost listener.
 
 ## Runtime configuration
 

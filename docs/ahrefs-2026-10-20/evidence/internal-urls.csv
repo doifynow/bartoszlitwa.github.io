@@ -1,0 +1,13 @@
+PR,URL,HTTP status code,Content type,Is indexable page,Title,Title length,Meta description,Meta description length,H1,H1 length,Meta robots,Robots information in HTTP headers,Canonical URL,Canonical URL code,Size (bytes),No. of content words,Depth,No. of href inlinks,No. of inlinks dofollow,No. of internal outlinks,No. of external outlinks,Loading time (ms),Redirect URL,Redirect URL code,Final redirect URL,Final redirect URL code,Organic traffic,No. of backlinks,No. of dofollow backlinks,No. of nofollow backlinks,No. of referring domains,No. of referring pages
+40,https://litwa.dev/,200,text/html,true,Bartosz Litwa — AI-Native Company Builder,41,"Bartosz Litwa builds DoifyNow, an AI-native company connecting RentifyNow, PostifyNow, and a focused family of products.",120,,,"follow
+index
+max-image-preview:large
+max-snippet:-1
+max-video-preview:-1",,https://litwa.dev/,200,2086,15,0,0,0,0,0,177,,,,,0,739,85,654,690,739
+7,https://litwa.dev/assets/index-CH4YxfMw.js,200,application/javascript,false,,,,,,,,,,,0,0,1,0,0,0,0,473,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/index-Cb7Wq3tL.css,200,text/css,false,,,,,,,,,,,0,0,1,0,0,0,0,179,,,,,0,0,0,0,0,0
+0,http://litwa.dev/,301,text/html; charset=utf-8,false,,,,,,,,,,,167,0,0,0,0,0,0,77,https://litwa.dev/,200,https://litwa.dev/,200,0,7,7,0,7,7
+0,https://www.litwa.dev/,301,text/html; charset=utf-8,false,,,,,,,,,,,167,0,0,0,0,0,0,48,https://litwa.dev/,200,https://litwa.dev/,200,0,0,0,0,0,0
+0,http://www.litwa.dev/,301,text/html; charset=utf-8,false,,,,,,,,,,,167,0,0,0,0,0,0,66,https://litwa.dev/,200,https://litwa.dev/,200,0,0,0,0,0,0
+0,https://litwa.dev/sitemap.xml,200,text/xml,false,,,,,,,,,,,222,2,,0,0,0,0,434,,,,,0,0,0,0,0,0
+0,https://litwa.dev/robots.txt,200,text/plain,false,,,,,,,,,,,71,0,,0,0,0,0,400,,,,,0,0,0,0,0,0

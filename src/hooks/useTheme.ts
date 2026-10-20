@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 export type Theme = 'light' | 'dark';
 
 const getInitialTheme = (): Theme => {
+  if (typeof window === 'undefined') return 'dark';
   try {
     const savedTheme = localStorage.getItem('portfolio-theme');
     if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;

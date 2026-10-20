@@ -163,7 +163,7 @@ No early queued-check merge or pending/skipped-as-green claim is authorized. Wit
 Docker gates blocked,wait for passing final-head required CI rather than using timed fallback.
 
 Mac coordinator's smallest remaining action after source merge: authorize normal rollout for the
-new Organization sameAs/logo/logo,verify its graph plus preserved content/routes on the target,then run the
+new Organization sameAs/logo,verify its graph plus preserved content/routes on the target,then run the
 authenticated Ahrefs recheck and capture residual exact schema/Organization drilldowns. Existing
 prerender needs no rewrite. If exact origin identity is required,use authorized read-only hosting
 access to match hashes to deployment metadata. Preserve intentional redirect/single-page notices.

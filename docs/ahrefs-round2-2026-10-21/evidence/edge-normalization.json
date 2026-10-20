@@ -1,0 +1,5 @@
+{
+  "normalization": "Reverse only Cloudflare public email anchor/span transformation and remove its decoder script. No other differences normalized.",
+  "equalsBuildAfterEdgeNormalization": true,
+  "normalizedLiveSha256": "fa7939212d67069a1128db4302e50ee6fe61ff55e18e09611286d928e9a0d291"
+}

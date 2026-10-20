@@ -1,0 +1,180 @@
+{
+  "observedAt": "2026-10-20T22:09:13.114041+00:00",
+  "records": [
+    {
+      "url": "https://litwa.dev/",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html",
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        "last-modified": "Tue, 20 Oct 2026 22:04:46 GMT",
+        "Server": "cloudflare",
+        "cf-cache-status": "DYNAMIC"
+      },
+      "bytes": 43962,
+      "sha256": "7c23bc4c6aa20044f1e0e8ca64981335d432f14fdc2467cbe832e20fc24a53e9",
+      "h1": 1,
+      "anchors": 37,
+      "scripts": [
+        "https://analytics.doifynow.com/script.js",
+        "/assets/index-CrAWbCxe.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "softwareApplication": false
+    },
+    {
+      "url": "http://litwa.dev/",
+      "status": 301,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Location": "https://litwa.dev/",
+        "Server": "cloudflare"
+      },
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "h1": 1,
+      "anchors": 0
+    },
+    {
+      "url": "https://www.litwa.dev/",
+      "status": 301,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Location": "https://litwa.dev/",
+        "Server": "cloudflare"
+      },
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "h1": 1,
+      "anchors": 0
+    },
+    {
+      "url": "http://www.litwa.dev/",
+      "status": 301,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Location": "https://litwa.dev/",
+        "Server": "cloudflare"
+      },
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "h1": 1,
+      "anchors": 0
+    },
+    {
+      "url": "https://litwa.dev/robots.txt",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/plain",
+        "etag": "\"6ad7e574-3e\"",
+        "last-modified": "Tue, 20 Oct 2026 22:04:36 GMT",
+        "Server": "cloudflare",
+        "Cache-Control": "max-age=14400",
+        "cf-cache-status": "EXPIRED"
+      },
+      "bytes": 62,
+      "sha256": "91ef287d946ec1f4d46fa9b9d11991f323c831609d011f15ca605c9f2cffb8b1",
+      "h1": 0,
+      "anchors": 0
+    },
+    {
+      "url": "https://litwa.dev/sitemap.xml",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/xml",
+        "etag": "W/\"6ad7e574-168\"",
+        "last-modified": "Tue, 20 Oct 2026 22:04:36 GMT",
+        "Server": "cloudflare",
+        "cf-cache-status": "DYNAMIC"
+      },
+      "bytes": 360,
+      "sha256": "08cf415c35279945625004691c196e9ebebc78ed7c9998bb4cc82aac618dca85",
+      "h1": 0,
+      "anchors": 0
+    },
+    {
+      "url": "https://litwa.dev/ahrefs-round2-missing-20261021",
+      "status": 404,
+      "headers": {
+        "Content-Type": "text/html",
+        "Server": "cloudflare",
+        "cf-cache-status": "DYNAMIC"
+      },
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "h1": 1,
+      "anchors": 0
+    },
+    {
+      "url": "https://litwa.dev/ahrefs-round2-missing-20261021/",
+      "status": 404,
+      "headers": {
+        "Content-Type": "text/html",
+        "Server": "cloudflare",
+        "cf-cache-status": "DYNAMIC"
+      },
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "h1": 1,
+      "anchors": 0
+    },
+    {
+      "url": "https://litwa.dev/en/",
+      "status": 404,
+      "headers": {
+        "Content-Type": "text/html",
+        "Server": "cloudflare",
+        "cf-cache-status": "DYNAMIC"
+      },
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "h1": 1,
+      "anchors": 0
+    },
+    {
+      "url": "https://litwa.dev/pl/",
+      "status": 404,
+      "headers": {
+        "Content-Type": "text/html",
+        "Server": "cloudflare",
+        "cf-cache-status": "DYNAMIC"
+      },
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "h1": 1,
+      "anchors": 0
+    },
+    {
+      "url": "https://litwa.dev/assets/index-CH4YxfMw.js",
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/javascript",
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "etag": "W/\"6ad0ee4d-4a286\"",
+        "last-modified": "Thu, 15 Oct 2026 15:16:29 GMT",
+        "Server": "cloudflare",
+        "cf-cache-status": "HIT"
+      },
+      "bytes": 303750,
+      "sha256": "b76ee18a4710c90804eb6a151781172156862aee8200d82b755a32e6ca910525",
+      "h1": 0,
+      "anchors": 0
+    },
+    {
+      "url": "https://litwa.dev/assets/index-Cb7Wq3tL.css",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/css",
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "etag": "W/\"6ad0ee4d-3b911\"",
+        "last-modified": "Thu, 15 Oct 2026 15:16:29 GMT",
+        "Server": "cloudflare",
+        "cf-cache-status": "HIT"
+      },
+      "bytes": 243985,
+      "sha256": "d1b5af986684b914be979fe3df7e3bb8f430e9cc885a7d1c612960bcefdcff38",
+      "h1": 0,
+      "anchors": 0
+    }
+  ]
+}

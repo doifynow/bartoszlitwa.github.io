@@ -3,3 +3,6 @@ coverage
 node_modules
 package-lock.json
 graphify-out
+
+# Preserve the exact sanitized audit exports and their supplied hashes.
+docs/ahrefs-2026-10-20/evidence/

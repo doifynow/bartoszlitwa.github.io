@@ -1,0 +1,6 @@
+{
+  "publicBadOrUnknownStatusRows": [],
+  "cloudflareEmailProtectionTargets": [],
+  "oauthMetadataTargets": [],
+  "directive": "Investigate Cloudflare email-obfuscation rewritten links in source and rendered HTML. Prefer safe source equivalents where possible; distinguish provider dependency without broad provider-setting mutation. Investigate OAuth metadata URL semantics against the actual MCP/OAuth routes without weakening auth. Preserve deliberate noindex/private routing."
+}

@@ -1,0 +1,122 @@
+{
+  "checkedAt": "2026-10-20T18:19:39.525095+00:00",
+  "rows": [
+    {
+      "url": "https://litwa.dev/",
+      "status": 200,
+      "type": "text/html",
+      "location": null,
+      "bytes": 7951,
+      "sha256": "fd77655d06273651e20fd5632c442cbb05e9fe38fba3ff3ab1d615cfd887a9b9",
+      "rootShell": true
+    },
+    {
+      "url": "http://litwa.dev/",
+      "status": 301,
+      "type": "text/html; charset=UTF-8",
+      "location": "https://litwa.dev/",
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "rootShell": false
+    },
+    {
+      "url": "https://www.litwa.dev/",
+      "status": 301,
+      "type": "text/html; charset=UTF-8",
+      "location": "https://litwa.dev/",
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "rootShell": false
+    },
+    {
+      "url": "http://www.litwa.dev/",
+      "status": 301,
+      "type": "text/html; charset=UTF-8",
+      "location": "https://litwa.dev/",
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/robots.txt",
+      "status": 200,
+      "type": "text/plain",
+      "location": null,
+      "bytes": 62,
+      "sha256": "91ef287d946ec1f4d46fa9b9d11991f323c831609d011f15ca605c9f2cffb8b1",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/sitemap.xml",
+      "status": 200,
+      "type": "text/xml",
+      "location": null,
+      "bytes": 394,
+      "sha256": "e89a58874edb9c0e8c128896d523faecdddf1171b8c534c94cdd7036eb5f0820",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/ahrefs-missing-20261020",
+      "status": 404,
+      "type": "text/html",
+      "location": null,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/ahrefs-missing-20261020/",
+      "status": 404,
+      "type": "text/html",
+      "location": null,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/pl/",
+      "status": 404,
+      "type": "text/html",
+      "location": null,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/en/",
+      "status": 404,
+      "type": "text/html",
+      "location": null,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/assets/index-CH4YxfMw.js",
+      "status": 200,
+      "type": "application/javascript",
+      "location": null,
+      "bytes": 303750,
+      "sha256": "b76ee18a4710c90804eb6a151781172156862aee8200d82b755a32e6ca910525",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/assets/index-Cb7Wq3tL.css",
+      "status": 200,
+      "type": "text/css",
+      "location": null,
+      "bytes": 243985,
+      "sha256": "d1b5af986684b914be979fe3df7e3bb8f430e9cc885a7d1c612960bcefdcff38",
+      "rootShell": false
+    },
+    {
+      "url": "https://litwa.dev/Bartosz_Litwa_CV.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "location": null,
+      "bytes": 2682,
+      "sha256": "e7d7dd6b5100020f7186c9f4957b30be1ceb64c537630899e4110e36b728cc1b",
+      "rootShell": false
+    }
+  ]
+}

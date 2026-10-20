@@ -1,0 +1,9 @@
+Link type,Is nofollow,Source URL,Source HTTP status code,Target URL,Target HTTP status code,Target no-crawl reason,Anchor,Alt attribute,Hreflang attribute,Is source canonical,Is source noindex,Is target canonical,Is target noindex,Is link self-referencing
+Sitemap URL,false,https://litwa.dev/sitemap.xml,200,https://litwa.dev/,200,,,,,true,false,true,false,false
+Redirect,false,https://www.litwa.dev/,301,https://litwa.dev/,200,,,,,true,false,true,false,false
+Redirect,false,http://www.litwa.dev/,301,https://litwa.dev/,200,,,,,true,false,true,false,false
+JavaScript,false,https://litwa.dev/,200,https://litwa.dev/assets/index-CH4YxfMw.js,200,,,,,true,false,true,false,false
+Redirect,false,http://litwa.dev/,301,https://litwa.dev/,200,,,,,true,false,true,false,false
+Canonical,false,https://litwa.dev/,200,https://litwa.dev/,200,,,,,true,false,true,false,true
+JavaScript,false,https://litwa.dev/,200,https://analytics.doifynow.com/script.js,,Blocked by robots.txt,,,,true,false,,,false
+CSS,false,https://litwa.dev/,200,https://litwa.dev/assets/index-Cb7Wq3tL.css,200,,,,,true,false,true,false,false

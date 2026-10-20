@@ -23,6 +23,12 @@ Browser
 There is no first-party backend, API, authentication/authorization service, database, migration
 system, or native mobile app here. Technology names in portfolio content describe other projects.
 
+`npm run build` also renders the existing React components into the initial English HTML, including
+the sections normally loaded on scroll. Readers and crawlers receive the actual headings, content,
+links, and corresponding styles without running JavaScript. The browser mounts the interactive app
+over this snapshot and restores the existing language/theme preferences; no server runtime is needed.
+The root remains the only page URL, with hash navigation and a client-side Polish language choice.
+
 Main runtime components:
 
 - `src/App.tsx`: composition, code splitting, and analytics section observation

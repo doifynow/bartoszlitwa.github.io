@@ -10,6 +10,7 @@ interface LanguageProviderProps {
 const translations: Translations = translationsData;
 
 const getInitialLanguage = (): Language => {
+  if (typeof window === 'undefined') return 'en';
   try {
     const savedLanguage = localStorage.getItem('preferred-language');
     if (savedLanguage === 'en' || savedLanguage === 'pl') {

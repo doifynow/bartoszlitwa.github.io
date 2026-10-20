@@ -67,6 +67,7 @@ test('keeps factual identity schema without unsupported software rich-result cla
     {
       name: 'DoifyNow',
       url: 'https://doifynow.com/',
+      sameAs: ['https://github.com/doifynow'],
       founder: { '@id': 'https://litwa.dev/#bartosz-litwa' }
     }
   );

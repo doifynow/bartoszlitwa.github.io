@@ -9,7 +9,6 @@
     "description": "Foundational knowledge of cloud services and how those services are provided with Microsoft Azure",
     "skills": ["Cloud Concepts", "Azure Services", "Security", "Compliance", "Pricing"],
     "credentialUrl": "#",
-    "badgeUrl": "https://images.credly.com/size/340x340/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png",
     "level": "Fundamentals",
     "category": "Cloud Fundamentals"
   },
@@ -29,7 +28,6 @@
       "Conversational AI"
     ],
     "credentialUrl": "#",
-    "badgeUrl": "https://images.credly.com/size/340x340/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png",
     "level": "Fundamentals",
     "category": "Artificial Intelligence"
   },
@@ -48,7 +46,6 @@
       "Analytics Workloads"
     ],
     "credentialUrl": "#",
-    "badgeUrl": "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     "level": "Fundamentals",
     "category": "Data & Analytics"
   },
@@ -68,7 +65,6 @@
       "API Management"
     ],
     "credentialUrl": "#",
-    "badgeUrl": "https://images.credly.com/size/340x340/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png",
     "level": "Associate",
     "category": "Development"
   }

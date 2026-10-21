@@ -15,7 +15,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({ certification }) 
 
   return (
     <article className="certification-card">
-      {badgeFailed ? (
+      {!certification.badgeUrl || badgeFailed ? (
         <div
           className="certification-badge certification-badge-fallback"
           role="img"

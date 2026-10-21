@@ -1,0 +1,11 @@
+{
+  "sourceBase": "7f0f1a0b2fe8743be130b9ac0a43d5ce7f9a9b9c",
+  "builtIndexSha256": "7db707f9494872fe68b00c2c61a35750891837e29c23b86ad3f0a39b06a9bff2",
+  "builtIndexBytes": 43699,
+  "fallbackCards": 4,
+  "credlyUrlsInHtmlOrJavaScript": 0,
+  "h1": 1,
+  "allOtherCertificateDataUnchanged": true,
+  "credentialUrlsBefore": ["#", "#", "#", "#"],
+  "credentialUrlsAfter": ["#", "#", "#", "#"]
+}

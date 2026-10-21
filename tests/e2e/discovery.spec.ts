@@ -13,6 +13,7 @@ test('serves the complete portfolio and working discovery links without JavaScri
   expect(html).toContain('<h1');
   expect(html).toContain('href="mailto:bartosz.litwa@proton.me"');
   expect(html).not.toContain('/cdn-cgi/l/email-protection');
+  expect(html).not.toContain('https://images.credly.com/');
 
   const context = await browser.newContext({
     javaScriptEnabled: false,
@@ -28,6 +29,8 @@ test('serves the complete portfolio and working discovery links without JavaScri
     await expect(page.locator('#ecosystem')).toContainText('DoifyNow');
     await expect(page.locator('#experience h2')).toBeVisible();
     await expect(page.locator('#certifications h2')).toBeVisible();
+    await expect(page.locator('#certifications .certification-badge-fallback')).toHaveCount(4);
+    await expect(page.locator('#certifications img')).toHaveCount(0);
     await expect(page.locator('footer')).toContainText('bartosz.litwa@proton.me');
     await expect(page.locator('a[href="https://doifynow.com"]').first()).toBeVisible();
     await expect(page.locator('a[href="/Bartosz_Litwa_CV.pdf"]')).toBeVisible();

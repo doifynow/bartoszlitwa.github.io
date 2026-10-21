@@ -1,0 +1,27 @@
+{
+  "observedAt": "2026-10-21T00:36:49.767201+00:00",
+  "rows": [
+    {
+      "url": "https://litwa.dev/",
+      "status": 200,
+      "contentType": "text/html",
+      "cacheControl": "no-cache, no-store, must-revalidate",
+      "bytes": 44085,
+      "sha256": "23718b3631b678b9852ce8b48d1014351df7957a0881d82917e653e40dd0da7a",
+      "h1": 1,
+      "anchors": 37,
+      "emailLinks": ["/cdn-cgi/l/email-protection#096b687b7d667a732765607d7e6849797b667d666727646c"]
+    },
+    {
+      "url": "https://litwa.dev/cdn-cgi/l/email-protection",
+      "status": 404,
+      "contentType": "text/html",
+      "cacheControl": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "bytes": 4713,
+      "sha256": "1159462ce12c8c9b15e0c47a679914bb3f4529469264e1558f9ea065a850e80d",
+      "h1": 1,
+      "anchors": 4,
+      "emailLinks": []
+    }
+  ]
+}

@@ -48,7 +48,7 @@ export interface Certification {
   description: string;
   skills: string[];
   credentialUrl: string;
-  badgeUrl: string;
+  badgeUrl?: string;
   level: 'Fundamentals' | 'Associate' | 'Expert';
   category: string;
 }

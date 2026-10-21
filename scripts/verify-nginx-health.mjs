@@ -35,7 +35,8 @@ requireSuccess(
 try {
   for (const [source, destination] of [
     ['nginx.conf', '/etc/nginx/conf.d/default.conf'],
-    ['nginx-security-headers.conf', '/etc/nginx/portfolio-security-headers.conf']
+    ['nginx-security-headers.conf', '/etc/nginx/portfolio-security-headers.conf'],
+    ['build/index.html', '/usr/share/nginx/html/index.html']
   ]) {
     requireSuccess(docker(['cp', `${root}${source}`, `${container}:${destination}`]));
   }
@@ -65,6 +66,22 @@ try {
   assert.match(health.stderr, /Cache-Control: no-store/i);
   assert.match(health.stderr, /X-Robots-Tag: noindex, nofollow/i);
   assert.match(health.stderr, /Content-Security-Policy:/i);
+  const builtHtml = readFileSync(new URL('../build/index.html', import.meta.url), 'utf8');
+  for (const path of ['/', '/index.html']) {
+    const page = requireSuccess(
+      docker(['exec', container, 'wget', '-S', '-O', '-', `http://127.0.0.1${path}`])
+    );
+    assert.match(page.stderr, /HTTP\/1\.1 200 OK/);
+    assert.match(page.stderr, /Cache-Control: no-cache, no-store, must-revalidate, no-transform/i);
+    assert.match(page.stderr, /Content-Security-Policy:/i);
+    assert.equal(
+      page.stdout,
+      builtHtml,
+      'Serve the maintained prerender without changing its body.'
+    );
+    assert.match(page.stdout, /href="mailto:bartosz\.litwa@proton\.me"/);
+    assert.doesNotMatch(page.stdout, /\/cdn-cgi\/l\/email-protection/);
+  }
   const missing = docker([
     'exec',
     container,

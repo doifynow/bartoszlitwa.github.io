@@ -9,7 +9,10 @@ test('serves the complete portfolio and working discovery links without JavaScri
   const response = await request.get('/');
   expect(response.status()).toBe(200);
   expect(response.headers()['content-type']).toContain('text/html');
-  expect(await response.text()).toContain('<h1');
+  const html = await response.text();
+  expect(html).toContain('<h1');
+  expect(html).toContain('href="mailto:bartosz.litwa@proton.me"');
+  expect(html).not.toContain('/cdn-cgi/l/email-protection');
 
   const context = await browser.newContext({
     javaScriptEnabled: false,

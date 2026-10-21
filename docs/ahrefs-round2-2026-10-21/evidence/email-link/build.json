@@ -1,0 +1,15 @@
+{
+  "sourceBase": "f88d46d5797c628596c52adf859490424086b2a2",
+  "buildSha256": "87cfa900627b515e4b7764b8f653b310b221ac65acf10e961ae029a7eb286429",
+  "buildBytes": 43834,
+  "equalsPR60BuiltBody": true,
+  "h1": 1,
+  "anchors": 37,
+  "mailtoCount": 1,
+  "emailProtectionHrefs": 0,
+  "htmlCachePolicy": "no-cache, no-store, must-revalidate, no-transform",
+  "basePolicyLackedNoTransform": true,
+  "nginxRuntimeLocal": "blocked: Docker socket absent",
+  "unitLintTypecheckBuild": "passed",
+  "audit": "passed: zero vulnerabilities"
+}

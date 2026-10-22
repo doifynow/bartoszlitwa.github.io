@@ -45,13 +45,22 @@ test('serves the complete portfolio and working discovery links without JavaScri
     expect(brokenFragments).toEqual([]);
 
     const assets = await page
-      .locator('img[src], link[rel="stylesheet"]')
+      .locator(
+        'img[src], link[rel="stylesheet"], link[rel="icon"], link[rel="apple-touch-icon"], link[rel="preload"][as="image"], meta[property="og:image"], meta[name="twitter:image"]'
+      )
       .evaluateAll((elements) =>
         [
           ...new Set(
-            elements.map((element) => element.getAttribute('src') ?? element.getAttribute('href')!)
+            elements.map(
+              (element) =>
+                element.getAttribute('src') ??
+                element.getAttribute('href') ??
+                element.getAttribute('content')!
+            )
           )
-        ].filter((url) => url.startsWith('/'))
+        ]
+          .filter((url) => url.startsWith('/') || url.startsWith('https://litwa.dev/'))
+          .map((url) => new URL(url, 'https://litwa.dev').pathname)
       );
     for (const url of assets) {
       const asset = await request.get(url);
@@ -60,6 +69,32 @@ test('serves the complete portfolio and working discovery links without JavaScri
     }
   } finally {
     await context.close();
+  }
+});
+
+test('serves manifest icons with matching MIME types and ICO dimensions', async ({ request }) => {
+  const response = await request.get('/manifest.json');
+  expect(response.status()).toBe(200);
+  const manifest = await response.json();
+  expect(manifest.icons.length).toBeGreaterThan(0);
+  for (const icon of manifest.icons) {
+    expect(icon.type).toMatch(/^image\//);
+    const image = await request.get(icon.src);
+    expect(image.status(), icon.src).toBe(200);
+    expect(image.headers()['content-type'], icon.src).toContain(icon.type);
+    const body = await image.body();
+    expect(body.length, icon.src).toBeGreaterThan(0);
+    if (icon.type === 'image/x-icon') {
+      expect(body.readUInt16LE(0)).toBe(0);
+      expect(body.readUInt16LE(2)).toBe(1);
+      const sizes = Array.from({ length: body.readUInt16LE(4) }, (_, index) => {
+        const offset = 6 + index * 16;
+        return `${body[offset] || 256}x${body[offset + 1] || 256}`;
+      });
+      for (const size of icon.sizes.split(/\s+/)) {
+        expect(sizes, icon.src).toContain(size);
+      }
+    }
   }
 });
 

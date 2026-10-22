@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-22",
+  "base": "7b04cd1c867c9cac099308af8c88c71d91f80538",
+  "sourceChanges": [
+    "public/manifest.json",
+    "tests/e2e/discovery.spec.ts",
+    "package.json",
+    "package-lock.json"
+  ],
+  "initialInstall": {
+    "command": "fleet-workload -- npm ci --include=dev",
+    "outcome": "code failure",
+    "reason": "ESLint 10.13.0 exceeds eslint-plugin-jsx-a11y 6.10.2 peer range; ERESOLVE"
+  },
+  "repair": "Restore ESLint 9.39.5 dependency graph and align React DOM with React 19.3.1; no peer/integrity bypass",
+  "repairedInstall": {
+    "command": "fleet-workload -- npm ci --include=dev",
+    "outcome": "pass",
+    "durationSeconds": 35,
+    "note": "3 moderate vulnerabilities reported; high-severity gate evaluated separately"
+  },
+  "fullGate": {
+    "command": "CI=1 fleet-workload -- bash -c \"npm ci --include=dev && npm run check\"",
+    "originalOutcome": "Environment blocker at browser stage: missing Chromium headless shell v1243; install/format/lint/typecheck/unit/coverage/build/Nginx passed",
+    "recovery": "CI=1 fleet-workload -- npx playwright install chromium, then CI=1 fleet-workload -- bash -c \"npm run test:e2e && npm run audit\"",
+    "recoveryExitCode": 0,
+    "finalOutcome": "All maintained required surfaces verified across original command and focused browser/audit recovery; original full command is not reported as exit 0"
+  },
+  "sourceReview": "Correct manifest MIME hint and ICO size (actual 256x256); extend discovery checks; no page copy, CSS, component or schema change",
+  "media": {
+    "status": "not required",
+    "reason": "Nonvisual metadata/build correction; source diff, HTTP receipts and maintained tests substitute; no capture or NAS upload claimed"
+  },
+  "production": "Anonymous pre-change HTTP only; no deployment or current-head runtime acceptance",
+  "ahrefs": {
+    "crawl": "Root reports once-authorized fresh Oct22 crawl completed: Health100, AI100, zero internal errors; old broken-image findings absent",
+    "DR": 6,
+    "backlinks": "748",
+    "referringDomains": "696",
+    "provenance": "Root authenticated Site Explorer display supplied in chat Oct22",
+    "gainObserved": false
+  },
+  "providerActions": "None; no indexing, outreach send, credentials or provider changes",
+  "reactMismatch": {
+    "outcome": "reproduced code failure",
+    "versions": {
+      "react": "19.3.1",
+      "react-dom": "19.3.0"
+    },
+    "effect": "Three unit suites fail before collecting tests",
+    "fix": "React DOM 19.3.1, published peer react ^19.3.1"
+  },
+  "checks": {
+    "format": "pass; changed files formatted after documentation updates",
+    "lint": "pass, including focused final discovery.spec.ts recheck",
+    "typecheck": "pass",
+    "unitCoverage": {
+      "status": "pass",
+      "tests": 18,
+      "statements": 80.88,
+      "branches": 60.86,
+      "functions": 80,
+      "lines": 85.42
+    },
+    "build": "pass; Vite production plus maintained React prerender",
+    "container": "pass: exact pinned Nginx health/security headers/cache/missing-route contract",
+    "browser": {
+      "status": "pass",
+      "passed": 61,
+      "skipped": 2,
+      "reason": "Existing mobile-menu journey is intentionally excluded on desktop/tablet; executed on mobile",
+      "projects": ["desktop-chromium", "tablet-chromium", "mobile-chromium"]
+    },
+    "audit": {
+      "exitCode": 0,
+      "policy": "npm audit --include=dev --audit-level=high",
+      "moderateFindings": 3,
+      "affected": "Vitest/mocker/coverage chain",
+      "advisories": ["GHSA-qxg6-89mg-rqv8", "GHSA-xp26-3454-mjgp"],
+      "limit": "Not a zero-vulnerability claim"
+    }
+  },
+  "sourceHashes": {
+    "public/manifest.json": "261837d6f46143573103b8fa01f40c57665dbb94950c0cf166331a4ca90597e1",
+    "tests/e2e/discovery.spec.ts": "898f73da10a8755abbfa4e2c726ccfd08d1a148a5dff549f425a1b27d5eded74",
+    "package.json": "4a9584554cb1fdbbfcdc55e83bea88fd90eadeac1a3193b7d9d52e2bad8e5f14",
+    "package-lock.json": "c2c6a201d096c7f98c44b605f4229e615ad6945770b76dd065e5357c58230b44"
+  },
+  "implementationCommit": "0638f346065cbed059f0e1aab0e62f148d4aa475",
+  "ci": {
+    "implementationHead": "0638f346065cbed059f0e1aab0e62f148d4aa475",
+    "status": "Required CI gate SUCCESS at 2026-10-22T18:32:51Z",
+    "url": "https://github.com/doifynow/bartoszlitwa.github.io/actions/runs/39831878020/job/120009845842",
+    "limit": "Documentation update creates a final head requiring fresh gates; source checks reused because all implementation hashes remain unchanged"
+  }
+}

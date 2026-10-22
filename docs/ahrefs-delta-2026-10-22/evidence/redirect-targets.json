@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://www.linkedin.com/in/bartoszlitwa",
+    "status": 999,
+    "contentType": "text/html",
+    "location": null,
+    "bytes": 1530,
+    "sha256": "644031a68bde879af85bcc9cb3e6fa1e9a6b0f61d49307581974b5dbc09d3de8"
+  },
+  {
+    "url": "https://rentifynow.com/pl/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "location": null,
+    "bytes": 47162,
+    "sha256": "c81702e9ced7d9b620b2926805750c6941552dc66106a4da6225aa5626203e2e"
+  }
+]

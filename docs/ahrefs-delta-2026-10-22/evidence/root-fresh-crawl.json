@@ -1,0 +1,27 @@
+{
+  "provenance": "Root authenticated Ahrefs readback supplied in originating T3 chat; not worker browser authentication",
+  "observedAt": "2026-10-22T18:29:48.734669+00:00",
+  "newCrawl": true,
+  "status": "Completed",
+  "healthScore": 100,
+  "aiScore": 100,
+  "internalUrlsDashboard": 5,
+  "internalUrlsWithErrors": 0,
+  "completedDisplayedAt": "2026-10-22 20:20 Europe/Warsaw",
+  "actualIssueSummary": "Broken-image4/page-broken-image1 from older report are absent. Actual6categories: links-to-redirect1; redirected-page-noincoming1; 3XX3; HTTPtoHTTPS2; slowpage1; externalredirect1. No genuine broken image now; reuse merged62.",
+  "countsOverlapNotUniqueBugs": true,
+  "latestIssuesUrl": "https://app.ahrefs.com/site-audit/10563823/issues",
+  "baseline": {
+    "DR": 6,
+    "backlinks": "748",
+    "referringDomains": "696",
+    "DRIncreaseObserved": false
+  },
+  "backlinkSample": {
+    "sample": 50,
+    "ahrefsSpamLabels": 47,
+    "examples": ["buybacklinks.agency", "bunero.shop"],
+    "selection": "First 50 displayed referring-domain rows ordered by DR descending",
+    "limitation": "Selected sample; not an overall spam percentage; no automatic disavowal or acquisition recommendation"
+  }
+}

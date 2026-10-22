@@ -2,8 +2,15 @@
 
 ## Scope and identity
 
-This is a fresh review of an existing completed crawl, not a new crawl or clearance result.
-The coordinating owner reread the authenticated Actual issue table on 22 October at
+**Latest evidence:** root reports the once-authorized fresh crawl is **Completed**, displayed
+22 October 20:20 Europe/Warsaw, with **Health 100, AI 100, 5 dashboard URLs and 0 internal
+URLs with errors**, authenticated readback at **18:29:48 UTC on 22 October**. The broken-image
+and page-broken-image findings are absent. This supersedes the older crawl supplied initially;
+it reuses merged #62 and is not a result caused by this PR. The [root-supplied receipt](evidence/root-fresh-crawl.json)
+is provenance from the coordinating owner, not a worker-authenticated browser session.
+
+For chronology, the initial assignment was a review of an existing completed crawl.
+The coordinating owner had reread the authenticated Actual issue table on 22 October at
 18:12:05 UTC: project [10563823](https://app.ahrefs.com/site-audit/10563823/issues), displayed
 crawl date 21 October early morning Europe/Warsaw, Health Score 96, AI Score 100,
 5 internal dashboard URLs and 1 internal URL with errors. Counts overlap. The broken-image
@@ -14,7 +21,11 @@ Root separately supplied the authenticated Site Explorer baseline on 22 October:
 not independently remeasured here. No DR increase was observed. Health/AI scores do not measure DR.
 [Ahrefs defines DR](https://help.ahrefs.com/en/articles/1409408-what-is-domain-rating-dr)
 as relative backlink-profile strength. Counts alone establish neither relevance nor harmful links;
-no disavowal or link-quality conclusion follows from this baseline.
+no disavowal or link-quality conclusion follows from this baseline. Root's later backlink
+sample reports **47 literal Ahrefs SPAM labels among the first 50 displayed referring-domain
+rows, ordered by DR descending**, including `buybacklinks.agency` and `bunero.shop`.
+This is a selected sample, not an overall spam percentage. Exclude those domains from prospecting;
+do not infer harm, buy similar links or automatically disavow them.
 
 Repository `doifynow/bartoszlitwa.github.io`, `public/CNAME`, package homepage, canonical,
 robots and sitemap all identify `https://litwa.dev/`. The clean assigned worktree
@@ -48,6 +59,28 @@ body, not the deployed commit or every runtime resource. All 25 discovered first
 There are 23 img elements: 22 network references to 12 unique URLs and one inline image.
 Four certificate fallbacks, zero Credly references, one H1 and the direct mailto are present.
 HTTP success/content type alone is not visual decoding or browser acceptance.
+
+A later request with Python's default user agent received 403; the named verification user
+agent subsequently received 200 in a single timing sample (TTFB 0.138 s, total 0.138 s).
+This does not establish bot-wide availability or disprove Ahrefs' slow-page observation.
+See [follow-up limitations](evidence/follow-up-checks.json).
+
+### Latest completed Oct22 crawl: all six categories
+
+| Category / count                                   | URL / current public evidence                                                                                                                                                                       | Source / PR and classification                                                                                                                     | Owner / remaining evidence                                                                                                       |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Links to redirect / 1                              | Homepage; no current redirecting internal href reproduced. RentifyNow and LinkedIn outgoing redirects are described below. Exact fresh edge unavailable.                                            | Existing source and #61 email fix; no new source bug established.                                                                                  | Coordinator supplies exact edge if actionable; no blanket redirect removal.                                                      |
+| Redirected page has no incoming internal links / 1 | HTTPS homepage is the single sitemap document and destination of all aliases.                                                                                                                       | Existing one-page topology; intentional.                                                                                                           | Preserve canonical/hash navigation.                                                                                              |
+| 3XX / 3                                            | HTTP apex, HTTP www and HTTPS www each return one 301 to the 200 canonical.                                                                                                                         | Existing edge policy; intentional.                                                                                                                 | Hosting owner; no change needed.                                                                                                 |
+| HTTP to HTTPS / 2                                  | Both HTTP aliases upgrade directly to the HTTPS apex.                                                                                                                                               | Intentional; overlaps preceding category.                                                                                                          | Preserve HTTPS.                                                                                                                  |
+| Slow page / 1                                      | Fresh drilldown URL, measured duration and threshold were not supplied. Homepage is the only indexable sitemap document; one local anonymous network sample is fast but is not Ahrefs' measurement. | Warning candidate, not a reproduced source defect. Current assets/build are inspected; do not add a speculative optimization or change CDN policy. | Coordinator: provide the exact affected URL, timings and crawl context if pursuing this warning. No slow-page clearance claimed. |
+| External redirect / 1                              | Current public homepage exposes the RentifyNow locale and LinkedIn normalization redirects; old and new crawl counts need not equal current sampled edges.                                          | Locale-neutral product root is intentional; LinkedIn bot refusal is external.                                                                      | Preserve valid identity/product targets; exact fresh edge remains unavailable.                                                   |
+
+Counts overlap and are not unique bugs. The old broken-image, IndexNow, H1-change and word-count
+rows are absent from root's six-category summary. No new badge, schema, content-padding or
+indexing patch is justified by that update. No schema warning was supplied for this portfolio.
+
+### Superseded Oct21 crawl ledger retained for comparison
 
 | Issue / count                                      | URL and current public bytes                                                                                                                                                                            | Current source / PR                                                                                                                                                                | Classification                                                                                                      | Owner / remaining evidence                                                                                                                                       |
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |

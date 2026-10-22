@@ -8,7 +8,11 @@ publishes articles, creates accounts, buys placements or promises a DR target.
 ## Baseline, asset fit and deduplication
 
 Root's authenticated 22 October baseline is **DR 6; backlinks "748"; referring domains "696"**.
-No increase was observed. Exact existing editorial referring domains, lost-link target URLs,
+No increase was observed. Root later supplied a selected first-50 referring-domain sample,
+ordered by DR descending: **47 rows carry Ahrefs' literal SPAM label**, including
+`buybacklinks.agency` and `bunero.shop`. This is not a population percentage. Those examples
+are excluded from acquisition prospects; do not buy similar links or automatically disavow them.
+Exact existing editorial referring domains, lost-link target URLs,
 competitor DR and competitor backlink counts are **unavailable**. Do not call a prospect a
 new referring domain until root compares it with the real backlink inventory. Do not infer
 spam from the baseline, disavow links automatically, or count owned portfolio links as

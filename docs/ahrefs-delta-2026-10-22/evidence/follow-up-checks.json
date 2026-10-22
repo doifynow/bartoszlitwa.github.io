@@ -14,5 +14,14 @@
     },
     "status": 403,
     "interpretation": "Different user agent from initial passing sample; bot-wide availability and inline-image decoding remain unverified. No provider or source-serving change justified."
+  },
+  "singleTimingSample": {
+    "url": "https://litwa.dev/",
+    "method": "Anonymous curl GET with LitwaPublicVerification/1.0 user agent",
+    "status": 200,
+    "timeToFirstByteSeconds": 0.137626,
+    "totalSeconds": 0.137876,
+    "bytes": 43699,
+    "limitation": "One worker network sample; not Ahrefs measurement or field performance clearance"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "recordedAt": "2026-10-22T18:27:39.556036+00:00",
+  "favicon": {
+    "source": "public/favicon.ico",
+    "kind": 1,
+    "actualSizes": [[256, 256]],
+    "originalDeclaredSizes": "64x64 32x32 24x24 16x16",
+    "correctedDeclaredSizes": "256x256"
+  },
+  "laterAnonymousProbe": {
+    "url": "https://litwa.dev/",
+    "requestHeaders": {
+      "User-Agent": "Python-urllib/3.14"
+    },
+    "status": 403,
+    "interpretation": "Different user agent from initial passing sample; bot-wide availability and inline-image decoding remain unverified. No provider or source-serving change justified."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "htmlBytes": 43699,
+  "htmlSha256": "1235089d361f814c801e67262e66a49db66d877e3faf217cf0625c7a1adf4533",
+  "manifest": {
+    "short_name": "Bartosz Litwa",
+    "name": "Bartosz Litwa - AI-Native Company and Product Portfolio",
+    "description": "DoifyNow, RentifyNow, PostifyNow, and a focused AI-native product family",
+    "icons": [
+      {
+        "src": "/favicon.ico",
+        "sizes": "256x256",
+        "type": "image/x-icon"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#050507",
+    "background_color": "#050507",
+    "categories": ["business", "productivity", "portfolio"],
+    "lang": "en-US",
+    "dir": "ltr",
+    "orientation": "portrait-primary"
+  },
+  "credlyReferences": 0,
+  "certificateFallbacks": 4,
+  "h1Count": 1
+}

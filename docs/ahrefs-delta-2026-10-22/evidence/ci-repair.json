@@ -1,0 +1,45 @@
+{
+  "failedHead": "5787188431b03f946b042581ca159beabefb42af",
+  "failedJob": "https://github.com/doifynow/bartoszlitwa.github.io/actions/runs/39832552652/job/120012219782",
+  "runner": "fleetsetup-t3code-2",
+  "failure": "Nginx contract homepage request returned 403 at scripts/verify-nginx-health.mjs:71; install, browser install and prior gate stages passed",
+  "inference": "Copied fixture retained restrictive host file mode; original runner file mode unavailable",
+  "localReproduction": {
+    "hostFixtureMode": "0600",
+    "beforeExitCode": 1,
+    "beforeResponse": "HTTP/1.1 403 Forbidden",
+    "normalModeBefore": "0644 passed in original maintained check"
+  },
+  "repair": "After starting only the disposable test container, chmod only /usr/share/nginx/html/index.html to0644 before exact response assertions",
+  "focusedVerification": [
+    {
+      "fixtureMode": "0600",
+      "afterExitCode": 0
+    },
+    {
+      "fixtureMode": "0644",
+      "afterExitCode": 0
+    },
+    {
+      "command": "prettier scripts/verify-nginx-health.mjs --check",
+      "exitCode": 0
+    },
+    {
+      "command": "eslint scripts/verify-nginx-health.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "reusedEvidence": "Application/dependencies/build unchanged; passing 18 unit tests, maintained build and61browser cases plus2existingconditional skips remain applicable",
+  "sourceSha256": "b404a6e8b4305bc0ecd4054bdfe600b301678382f4801e9b3e9a05363a4e4524",
+  "productionMutation": false,
+  "previousGuard": {
+    "pid": 1484815,
+    "finishedAt": "2026-10-22T18:59:13.606639+00:00",
+    "exitCode": 2,
+    "outcome": "Stopped on known CI failure; no fallback merge"
+  }
+}

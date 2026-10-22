@@ -132,6 +132,18 @@ functional QA. No account, native, deployment, indexing or outreach action was p
 
 ## Verification and acceptance
 
+CI follow-up: the evidence-only head `5787188431b03f946b042581ca159beabefb42af` failed
+the Nginx contract on runner `fleetsetup-t3code-2`: the copied homepage returned 403.
+The implementation head had passed the same required gate on another run. A focused local
+reproduction with a 0600 built-index fixture yields the identical 403; normal 0644 passes.
+`docker cp` preserves host file permissions, so the test now explicitly makes only its copied
+index readable by the Nginx worker inside its disposable container. The complete response,
+cache/header and missing-route assertions remain intact. Both 0600 and 0644 fixture modes pass
+after the repair; see [CI repair receipt](evidence/ci-repair.json). No production configuration,
+host permissions, dependency, application or build output changes accompany this test fix.
+The actual failing runner's original file mode was not captured, so that environment detail
+is inferred from the failure and matched local reproduction, pending fresh current-head CI.
+
 Detailed local outcomes are retained in [verification evidence](evidence/verification.json).
 Dependency installation, formatting, lint, typecheck, unit/coverage, build, container, browser,
 audit, CI and runtime are separate surfaces. The maintained full gate is attempted after the

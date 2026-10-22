@@ -41,6 +41,8 @@ try {
     requireSuccess(docker(['cp', `${root}${source}`, `${container}:${destination}`]));
   }
   requireSuccess(docker(['start', container]));
+  // docker cp preserves a runner's restrictive file mode; Nginx reads as its worker user.
+  requireSuccess(docker(['exec', container, 'chmod', '0644', '/usr/share/nginx/html/index.html']));
   requireSuccess(docker(['exec', container, 'nginx', '-t']));
   // Docker start precedes Nginx's entrypoint setup; wait for its listener.
   const deadline = Date.now() + 20_000;

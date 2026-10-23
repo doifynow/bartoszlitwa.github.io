@@ -82,25 +82,35 @@ independent Health/DR scores are unavailable.
 
 ## All six current Ahrefs categories
 
-Counts overlap and are not summed. Root subsequently supplied complete native 25-row internal
-URL and 36-row all-links CSVs. Both are preserved byte-for-byte with independently verified
-SHA-256 hashes. The [compact exact URL/category/source/action matrix](URL-MATRIX.md) supersedes
-the initial provisional attribution. All 25 exported URLs were reread anonymously; statuses
-match the native dataset (22 resources/pages at 200, three domain aliases at 301).
+Counts overlap and are not summed. The complete native bundle supplied after #72 merged now
+establishes exact membership for **all six Actual categories**, superseding provisional wording
+in the earlier acceptance record. It is [preserved unchanged](evidence/bartoszlitwa.github.io--complete-native-inputs.json.txt),
+with independently checked SHA-256 `4a972ce226f6180654426ee5e15a0569abffbf0643c5f66eb47a4160e45bd856`.
+The native 25-row internal URL and 36-row link CSVs remain unchanged. Each exact-target inlink
+join and native expected/displayed/total row count was verified; the `native.address` query
+columns are decoded in the [verification receipt](evidence/exact-category-verification.json).
 
-| Current category / count                            | Native URL / source attribution                                                                                                       | Current response and action / owner                                                                                                                                                                   |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Links to redirect / 1                               | Exact exported Href: `https://litwa.dev/` → `https://rentifynow.com/`; source 200, target 301, anchor `Visit product`, nofollow false | Root 301 → canonical `/pl/` 200. This PR uses direct final `/pl/` URL; portfolio owner. Dataset identifies this edge; focused Actual-row membership is separate.                                      |
-| Redirected page without incoming internal links / 1 | `http://litwa.dev/`, `http://www.litwa.dev/`, `https://www.litwa.dev/` each have zero native href inlinks                             | Each 301 directly to canonical 200; intentional topology. No links to aliases added. Coordinator owns exact single-row category attribution.                                                          |
-| 3XX / 3                                             | All three exact aliases above appear as Redirect rows to `https://litwa.dev/`                                                         | All current 301s match; preserve canonicalization and legitimate inbound traffic.                                                                                                                     |
-| HTTP → HTTPS / 2                                    | Native `http://litwa.dev/` and `http://www.litwa.dev/`                                                                                | Both 301 directly to HTTPS apex; intentional transport policy, preserve.                                                                                                                              |
-| Slow page / 1                                       | Native homepage 1,572 ms; exact Actual-category assignment not encoded in the URL CSV                                                 | Current bounded worker samples 0.210/0.125/0.072 seconds; do not equate measurements or infer source regression. Existing #59/#62 fixes preserved; coordinator owns focused timing/category readback. |
-| External redirect / 1                               | Exact exported homepage → RentifyNow root 301 edge                                                                                    | Correct direct localized canonical link here; do not invent another target or claim category clearance before a later crawl.                                                                          |
+The [final exact URL/category/current-response/source/action matrix](URL-MATRIX.md) lists nine
+overlapping occurrences across five distinct URLs. Its key conclusions are:
 
-The full native matrix also distinguishes third-party robots blocks (LinkedIn and analytics),
-asset indexability, the explicit exported sitemap edge, and page-level referring-domain fields
-from domain-level DR observations. Native title/description/H1 lengths are observations, not
-copy-padding targets. AI/schema/sitemap category membership is not inferred from thresholds.
+- “Page has links to redirect” names the canonical homepage and its RentifyNow 301 outlink;
+  “External 3XX redirect” names `https://rentifynow.com/` with the homepage as exact Href source.
+  The direct `/pl/` link is already fixed by merged #72; unchanged public HTML is rollout issue #71.
+- “Redirected page has no incoming internal links” names **`https://litwa.dev/` at 200**, with
+  three incoming redirects and zero href inlinks. It does not name one of the 301 aliases.
+  This is intentional one-page/hash-navigation topology; preserve normal navigation and sitemap.
+- The three 3XX members are separately `http://litwa.dev/`, `https://www.litwa.dev/` and
+  `http://www.litwa.dev/`. The HTTP-to-HTTPS category contains only the two HTTP URLs.
+  All remain one-hop canonical 301s with loop No; preserve secure transport and inbound value.
+- The exact Slow-page member is the indexable canonical homepage: native TTFB **1,570 ms**,
+  loading **1,572 ms**, size 11,918 bytes. This records crawler waiting before first byte,
+  not a proved frontend regression or a reason to repeat existing source repairs.
+
+[Fresh exact-category anonymous readbacks](evidence/exact-category-current-http.json) confirm
+all expected statuses, the RentifyNow final canonical destination, and the remaining public
+family rollout gap. No AI/schema/sitemap issue membership is inferred from thresholds; no such
+additional category exists in the six-row product summary. Exact attribution is complete and
+no repeated human export request remains.
 
 No broken-image categories exist in today's completed crawl. [Twenty-one current first-party assets](evidence/public-assets.json)
 returned 200, including script/styles/images/discovery assets. Root canonical is singular, robots
@@ -181,7 +191,7 @@ Health/AI/DR score is claimed. A required pending check is not called green.
 The exports supplied after PR creation are preserved as native CSVs, with 25/36 rows and hashes
 matching root's verified originals. No repeated export request or new crawl was made. The new
 URL matrix records every native URL, current status and exact incoming source/link type; raw
-AI/schema issue membership remains outside these datasets.
+The later complete issue-specific bundle now resolves all six Actual-category memberships; the CSVs alone did not establish them.
 
 Initial PR head `7db9d74ee4f575074cf49f02d4ec0b9a3e7350ef` CI ran on provisioned self-hosted
 runner `fleetsetup-t3code-2`: 66 browser cases passed, two were skipped, one tablet language-menu
@@ -197,3 +207,21 @@ desktop/tablet/mobile: **9 passed in 29.4 seconds**, using two workers. Narrow E
 diff checks passed. Source, dependencies and build configuration are unchanged; the prior
 maintained build, unit/Nginx results and visual proof are reused. The new commit restarts the
 head-specific CI budget; it does not reset the old head's deadline or treat its failure as green.
+
+## Final native attribution follow-up
+
+#72 merged as `622a8faba1b28ce21d0575fea6d4d988814ac155` after current-head required CI passed.
+Its worktree was retired, then T3 restored the same bound task worktree for the new evidence
+message. The restored clean topic branch was fast-forwarded to fetched main `622a8f...`; no
+writing checkout was shell-created or switched. This follow-up only corrects dated evidence
+and attribution; production code, styles, translations, tests and provider settings are unchanged.
+Prior source/build/browser/NAS proof remains applicable to the implementation in #72. This
+nonvisual change uses raw-hash, exact membership/inlink-join, HTTP, formatting and diff evidence.
+No new local build, browser capture, Ahrefs crawl or production rollout is represented as performed.
+
+The raw transferred JSON uses a `.json.txt` repository suffix so repository formatting cannot
+rewrite its bytes. The full input CSVs and bundle hashes are preserved separately from derived
+receipts. The earlier category caveats are superseded explicitly, including the corrected 200
+canonical destination for “Redirected page has no incoming internal links”. All source defects
+are either already fixed in #72 or not established; the remaining runtime publication gap stays
+with the existing manual-setup infrastructure issue #71. Health/AI/DR measurements are unchanged.

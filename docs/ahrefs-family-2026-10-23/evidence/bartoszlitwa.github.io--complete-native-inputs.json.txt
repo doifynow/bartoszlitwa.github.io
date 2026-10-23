@@ -1,0 +1,545 @@
+{
+  "product": "bartoszlitwa.github.io",
+  "observedDate": "2026-10-23",
+  "source": "Exact authenticated Ahrefs Actual category drilldowns, joined to native full-link export on exact Target URL",
+  "categoryCount": 6,
+  "categories": [
+    {
+      "label": "Page has links to redirect",
+      "occurrence": 0,
+      "expected": 1,
+      "slug": "page-has-links-to-redirect-0",
+      "native": {
+        "product": "bartoszlitwa.github.io",
+        "issue": "Page has links to redirect",
+        "occurrence": 0,
+        "expectedCategoryCount": 1,
+        "displayedRows": 1,
+        "totalRows": 1,
+        "address": "app.ahrefs.com/site-audit/10563823/data-explorer?columns=pageRating%2Curl%2Ctraffic%2ChttpCode%2CcontentType%2Cdepth%2ClinksInternal3xx%2ClinksCountInternal3xx%2ClinksExternal3xx%2ClinksCountExternal3xx&filterId=7ed0cf8c771d1d42fde3ba1a35506fb9&issueId=c64d3aa7-d0f4-11e7-8ed1-001e67ed4656&sorting=-pageRating",
+        "source": "Exact authenticated Ahrefs issue drilldown UI, 2026-10-23",
+        "rows": [
+          [
+            "40",
+            "HTML",
+            "Bartosz Litwa \u2014 AI-Native Company Builder",
+            "https://litwa.dev/",
+            "0",
+            "200",
+            "text/html",
+            "0",
+            "0",
+            "https://rentifynow.com/",
+            "301",
+            "1"
+          ]
+        ]
+      },
+      "affectedURLs": [
+        "https://litwa.dev/"
+      ],
+      "sourceInlinks": [
+        {
+          "Link type": "Sitemap URL",
+          "Is nofollow": "false",
+          "Source URL": "https://litwa.dev/sitemap.xml",
+          "Source HTTP status code": "200",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "https://www.litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "http://www.litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "http://litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Canonical",
+          "Is nofollow": "false",
+          "Source URL": "https://litwa.dev/",
+          "Source HTTP status code": "200",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "true"
+        }
+      ]
+    },
+    {
+      "label": "Redirected page has no incoming internal links",
+      "occurrence": 0,
+      "expected": 1,
+      "slug": "redirected-page-has-no-incoming-internal-links-0",
+      "native": {
+        "product": "bartoszlitwa.github.io",
+        "issue": "Redirected page has no incoming internal links",
+        "occurrence": 0,
+        "expectedCategoryCount": 1,
+        "displayedRows": 1,
+        "totalRows": 1,
+        "address": "app.ahrefs.com/site-audit/10563823/data-explorer?columns=pageRating%2Curl%2Ctraffic%2ChttpCode%2CcontentType%2Cdepth%2CincomingRedirect%2CincomingLinks&filterId=bf19722487cd8a2ea92787c1c7f16af1&issueId=c64d59c5-d0f4-11e7-8ed1-001e67ed4656&sorting=-pageRating",
+        "source": "Exact authenticated Ahrefs issue drilldown UI, 2026-10-23",
+        "rows": [
+          [
+            "40",
+            "HTML",
+            "Bartosz Litwa \u2014 AI-Native Company Builder",
+            "https://litwa.dev/",
+            "0",
+            "200",
+            "text/html",
+            "0",
+            "3",
+            "0"
+          ]
+        ]
+      },
+      "affectedURLs": [
+        "https://litwa.dev/"
+      ],
+      "sourceInlinks": [
+        {
+          "Link type": "Sitemap URL",
+          "Is nofollow": "false",
+          "Source URL": "https://litwa.dev/sitemap.xml",
+          "Source HTTP status code": "200",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "https://www.litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "http://www.litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "http://litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Canonical",
+          "Is nofollow": "false",
+          "Source URL": "https://litwa.dev/",
+          "Source HTTP status code": "200",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "true"
+        }
+      ]
+    },
+    {
+      "label": "3XX redirect",
+      "occurrence": 0,
+      "expected": 3,
+      "slug": "3xx-redirect-0",
+      "native": {
+        "product": "bartoszlitwa.github.io",
+        "issue": "3XX redirect",
+        "occurrence": 0,
+        "expectedCategoryCount": 3,
+        "displayedRows": 3,
+        "totalRows": 3,
+        "address": "app.ahrefs.com/site-audit/10563823/data-explorer?columns=pageRating%2Curl%2Ctraffic%2ChttpCode%2Credirect%2CredirectChainUrls%2CisRedirectLoop%2CincomingAllLinks%2CincomingRedirect%2Corigin&filterId=7b5c5e948c52d203dc64227a029b145f&issueId=c64d12c1-d0f4-11e7-8ed1-001e67ed4656&sorting=-pageRating",
+        "source": "Exact authenticated Ahrefs issue drilldown UI, 2026-10-23",
+        "rows": [
+          [
+            "0",
+            "HTML",
+            "301 Moved permanently",
+            "http://litwa.dev/",
+            "0",
+            "301",
+            "https://litwa.dev/",
+            "200",
+            "entry area (settable) Enter new redirect URL",
+            "https://litwa.dev/",
+            "200",
+            "No",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "HTML",
+            "301 Moved permanently",
+            "https://www.litwa.dev/",
+            "0",
+            "301",
+            "https://litwa.dev/",
+            "200",
+            "entry area (settable) Enter new redirect URL",
+            "https://litwa.dev/",
+            "200",
+            "No",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "HTML",
+            "301 Moved permanently",
+            "http://www.litwa.dev/",
+            "0",
+            "301",
+            "https://litwa.dev/",
+            "200",
+            "entry area (settable) Enter new redirect URL",
+            "https://litwa.dev/",
+            "200",
+            "No",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "affectedURLs": [
+        "http://litwa.dev/",
+        "https://www.litwa.dev/",
+        "http://www.litwa.dev/"
+      ],
+      "sourceInlinks": []
+    },
+    {
+      "label": "HTTP to HTTPS redirect",
+      "occurrence": 0,
+      "expected": 2,
+      "slug": "http-to-https-redirect-0",
+      "native": {
+        "product": "bartoszlitwa.github.io",
+        "issue": "HTTP to HTTPS redirect",
+        "occurrence": 0,
+        "expectedCategoryCount": 2,
+        "displayedRows": 2,
+        "totalRows": 2,
+        "address": "app.ahrefs.com/site-audit/10563823/data-explorer?columns=pageRating%2Curl%2Ctraffic%2ChttpCode%2CredirectChainUrls%2CisRedirectLoop%2CincomingAllLinks%2CincomingRedirect%2Corigin&filterId=a14dc6b2d77b0ec4138ad1112570bc63&issueId=c64d5080-d0f4-11e7-8ed1-001e67ed4656&sorting=-pageRating",
+        "source": "Exact authenticated Ahrefs issue drilldown UI, 2026-10-23",
+        "rows": [
+          [
+            "0",
+            "HTML",
+            "301 Moved permanently",
+            "http://litwa.dev/",
+            "0",
+            "301",
+            "https://litwa.dev/",
+            "200",
+            "No",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "HTML",
+            "301 Moved permanently",
+            "http://www.litwa.dev/",
+            "0",
+            "301",
+            "https://litwa.dev/",
+            "200",
+            "No",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "affectedURLs": [
+        "http://litwa.dev/",
+        "http://www.litwa.dev/"
+      ],
+      "sourceInlinks": []
+    },
+    {
+      "label": "Slow page",
+      "occurrence": 0,
+      "expected": 1,
+      "slug": "slow-page-0",
+      "native": {
+        "product": "bartoszlitwa.github.io",
+        "issue": "Slow page",
+        "occurrence": 0,
+        "expectedCategoryCount": 1,
+        "displayedRows": 1,
+        "totalRows": 1,
+        "address": "app.ahrefs.com/site-audit/10563823/data-explorer?columns=pageRating%2Curl%2Ctraffic%2ChttpCode%2Csize%2CtimeToFirstByte%2CloadingTime%2Cdepth%2Ccompliant%2CincomingAllLinks%2Corigin&filterId=c012a4a3d1d05fe39aa1a3fb19ae5868&issueId=c64d7cbc-d0f4-11e7-8ed1-001e67ed4656&sorting=-pageRating",
+        "source": "Exact authenticated Ahrefs issue drilldown UI, 2026-10-23",
+        "rows": [
+          [
+            "40",
+            "HTML",
+            "Bartosz Litwa \u2014 AI-Native Company Builder",
+            "https://litwa.dev/",
+            "0",
+            "200",
+            "11,918",
+            "1,570",
+            "1,572",
+            "0",
+            "Yes",
+            "3"
+          ]
+        ]
+      },
+      "affectedURLs": [
+        "https://litwa.dev/"
+      ],
+      "sourceInlinks": [
+        {
+          "Link type": "Sitemap URL",
+          "Is nofollow": "false",
+          "Source URL": "https://litwa.dev/sitemap.xml",
+          "Source HTTP status code": "200",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "https://www.litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "http://www.litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Redirect",
+          "Is nofollow": "false",
+          "Source URL": "http://litwa.dev/",
+          "Source HTTP status code": "301",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        },
+        {
+          "Link type": "Canonical",
+          "Is nofollow": "false",
+          "Source URL": "https://litwa.dev/",
+          "Source HTTP status code": "200",
+          "Target URL": "https://litwa.dev/",
+          "Target HTTP status code": "200",
+          "Target no-crawl reason": "",
+          "Anchor": "",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "true"
+        }
+      ]
+    },
+    {
+      "label": "External 3XX redirect",
+      "occurrence": 0,
+      "expected": 1,
+      "slug": "external-3xx-redirect-0",
+      "native": {
+        "product": "bartoszlitwa.github.io",
+        "issue": "External 3XX redirect",
+        "occurrence": 0,
+        "expectedCategoryCount": 1,
+        "displayedRows": 1,
+        "totalRows": 1,
+        "address": "app.ahrefs.com/site-audit/10563823/data-explorer?columns=pageRating%2Curl%2Ctraffic%2ChttpCode%2CcontentType%2Cdepth%2Credirect%2CincomingAllLinks&filterId=b3b75b6257a370fcf9f1f73befb5deb5&issueId=c64d8847-d0f4-11e7-8ed1-001e67ed4656&sorting=-pageRating",
+        "source": "Exact authenticated Ahrefs issue drilldown UI, 2026-10-23",
+        "rows": [
+          [
+            "\u2014",
+            "HTML",
+            "301 Moved permanently",
+            "https://rentifynow.com/",
+            "301",
+            "text/html",
+            "1",
+            "Not crawled",
+            "1"
+          ]
+        ]
+      },
+      "affectedURLs": [
+        "https://rentifynow.com/"
+      ],
+      "sourceInlinks": [
+        {
+          "Link type": "Href link",
+          "Is nofollow": "false",
+          "Source URL": "https://litwa.dev/",
+          "Source HTTP status code": "200",
+          "Target URL": "https://rentifynow.com/",
+          "Target HTTP status code": "301",
+          "Target no-crawl reason": "",
+          "Anchor": "Visit product",
+          "Alt attribute": "",
+          "Hreflang attribute": "",
+          "Is source canonical": "true",
+          "Is source noindex": "false",
+          "Is target canonical": "true",
+          "Is target noindex": "false",
+          "Is link self-referencing": "false"
+        }
+      ]
+    }
+  ],
+  "note": "First found at in native rows is discovery provenance, not all inlinks. sourceInlinks is the full-link CSV exact URL join. Counts overlap; no unique-defect or live-fix claim."
+}

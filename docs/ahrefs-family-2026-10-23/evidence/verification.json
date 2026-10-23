@@ -1,0 +1,23 @@
+{
+  "baseMain": "3beb7cac479d324aeab05d8048d8da65be563698",
+  "install": "npm ci --include=dev passed; worker npm omit default is dev; no lockfile change",
+  "maintainedGate": "fleet-workload -- npm run check: formatting, lint, typecheck, 18 Vitest tests with coverage, production/prerender build and Nginx container checks passed. E2E first exposed an import attribute omission, corrected. No monolithic all-pass claim.",
+  "browserEnvironment": "Installed exact Playwright Chromium revision 1243 with PLAYWRIGHT_SKIP_BROWSER_GC=1; preserved existing revision 1248. One browser run began before installation finished and was stopped; not counted as verification.",
+  "responsiveBrowser": "Full 69-case run: 61 passed, 2 intentional desktop/tablet mobile-menu skips, 6 stale canonical-URL expectations failed. Corrected those assertions; focused six-case rerun is recorded separately.",
+  "coverage": {
+    "statements": 80.88,
+    "branches": 60.86,
+    "functions": 80,
+    "lines": 85.42
+  },
+  "audit": "npm run audit passed high-severity gate; 3 existing moderate Vitest/mocker dependency advisories remain. No dependency update in this scoped family patch.",
+  "ui": "T3 collaborative preview: actual desktop/mobile pixels reviewed, 21.27-second directory workflow; eight NAS artifacts with independent full retrieval and MP4 byte-range verification",
+  "performance": "Three bounded sequential homepage reads only; no load test or infrastructure change",
+  "providers": "Anonymous public landing/canonical/robots acceptance only; no sign-in, entitlement or remote feature acceptance",
+  "production": "Public baseline still omits Observe; no deployment or new score measurement",
+  "unavailable": "Native full URL/inlink datasets now preserved and verified (25/36 rows); focused Actual-category AI/schema/sitemap membership still not encoded and not inferred.",
+  "focusedBrowserRerun": "6 passed in 18.6 seconds across desktop, tablet and mobile; all 67 applicable browser cases passed across the full run and focused repair rerun; 2 existing conditional skips remain skips",
+  "sourceReview": "Task diff reviewed; verified sibling public destinations, English/Polish data, preserved feature limits, standard anchors and safe new-tab attributes. No provider configuration/noindex/auth routes changed.",
+  "firstHeadCI": "7db9d74: required gate failed one tablet language-menu focus case; 66 browser cases passed, 2 skipped. Test helper now waits for existing client-side data-theme before interactions; no runtime/UI change.",
+  "ciRepairLocal": "9 passed in 29.4 seconds: failed menu workflow plus JavaScript enabled/disabled family checks on all three viewports; two workers. Focused ESLint, formatting and diff checks passed. Runtime source/dependencies/configuration unchanged; prior build/unit/Nginx/media proof reused."
+}

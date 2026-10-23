@@ -149,7 +149,7 @@
 }
 
 .system-product {
-  --angle: calc(var(--product-index) * 45deg - 90deg);
+  --angle: calc(var(--product-index) * 360deg / var(--product-count) - 90deg);
   position: absolute;
   z-index: 3;
   top: calc(50% - 34px);

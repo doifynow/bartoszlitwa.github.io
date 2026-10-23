@@ -16,7 +16,7 @@
       "en": ["AI-native company", "Product ecosystem", "Shared platform"],
       "pl": ["Firma AI-native", "Ekosystem produktów", "Wspólna platforma"]
     },
-    "url": "https://doifynow.com"
+    "url": "https://doifynow.com/"
   },
   {
     "id": "rentifynow",
@@ -35,7 +35,7 @@
       "en": ["Rentals", "Property operations", "Workflow management"],
       "pl": ["Najem", "Operacje nieruchomości", "Zarządzanie procesami"]
     },
-    "url": "https://rentifynow.com"
+    "url": "https://rentifynow.com/pl/"
   },
   {
     "id": "houseifynow",
@@ -54,7 +54,7 @@
       "en": ["Home operations", "Maintenance", "Financial oversight"],
       "pl": ["Obsługa domu", "Utrzymanie", "Nadzór finansowy"]
     },
-    "url": "https://houseifynow.com"
+    "url": "https://houseifynow.com/"
   },
   {
     "id": "goalifynow",
@@ -73,7 +73,7 @@
       "en": ["Goals", "Habits", "Personal progress"],
       "pl": ["Cele", "Nawyki", "Osobisty rozwój"]
     },
-    "url": "https://goalifynow.com"
+    "url": "https://goalifynow.com/"
   },
   {
     "id": "deployifynow",
@@ -92,7 +92,7 @@
       "en": ["Deployments", "Infrastructure", "Automation"],
       "pl": ["Wdrożenia", "Infrastruktura", "Automatyzacja"]
     },
-    "url": "https://deployifynow.com"
+    "url": "https://deployifynow.com/"
   },
   {
     "id": "postifynow",
@@ -111,10 +111,33 @@
       "en": ["Content operations", "Approvals", "Audit trails"],
       "pl": ["Operacje treści", "Akceptacje", "Ścieżka audytu"]
     },
-    "url": "https://postifynow.app",
+    "url": "https://postifynow.app/",
     "availability": {
       "en": "Hosted active build; live provider publishing remains unverified.",
       "pl": "Hostowana aktywnie rozwijana wersja; działająca publikacja przez dostawców nie została zweryfikowana."
+    }
+  },
+  {
+    "id": "observeifynow",
+    "name": "ObserveifyNow",
+    "icon": "/product-icons/observeifynow.svg",
+    "stage": "active-build",
+    "role": {
+      "en": "Account-free local infrastructure observation.",
+      "pl": "Lokalna obserwacja infrastruktury bez konta."
+    },
+    "description": {
+      "en": "Read the health of services you already run from one workspace. Local reading needs no account; remote features are optional.",
+      "pl": "Odczytuj stan usług, które już uruchamiasz, w jednej przestrzeni. Lokalny odczyt nie wymaga konta; funkcje zdalne są opcjonalne."
+    },
+    "tags": {
+      "en": ["Infrastructure", "Local observation", "Account-free reading"],
+      "pl": ["Infrastruktura", "Lokalna obserwacja", "Odczyt bez konta"]
+    },
+    "url": "https://observe.doifynow.com/",
+    "availability": {
+      "en": "Public workspace for local reading; remote controls and new purchases are unavailable.",
+      "pl": "Publiczna przestrzeń do lokalnego odczytu; zdalne sterowanie i nowe zakupy są niedostępne."
     }
   },
   {
@@ -134,7 +157,7 @@
       "en": ["Inbound operations", "Consent and attribution", "Audited handoffs"],
       "pl": ["Obsługa zapytań", "Zgody i atrybucja", "Audytowane przekazania"]
     },
-    "url": "https://leadify.doifynow.com"
+    "url": "https://leadify.doifynow.com/"
   },
   {
     "id": "insightifynow",
@@ -153,7 +176,7 @@
       "en": ["Governed metrics", "Lineage", "Decision support"],
       "pl": ["Kontrolowane metryki", "Pochodzenie danych", "Wsparcie decyzji"]
     },
-    "url": "https://insight.doifynow.com",
+    "url": "https://insight.doifynow.com/",
     "availability": {
       "en": "Hosted internal-first build; access remains operator-controlled.",
       "pl": "Hostowana wersja najpierw wewnętrzna; dostęp pozostaje kontrolowany przez operatora."
@@ -176,7 +199,7 @@
       "en": ["Customer operations", "Human control", "Auditability"],
       "pl": ["Obsługa klienta", "Kontrola człowieka", "Audytowalność"]
     },
-    "url": "https://support.doifynow.com",
+    "url": "https://support.doifynow.com/",
     "availability": {
       "en": "Hosted operator build; customer-facing support channels remain unverified.",
       "pl": "Hostowana wersja dla operatora; kanały obsługi klienta nie zostały zweryfikowane."

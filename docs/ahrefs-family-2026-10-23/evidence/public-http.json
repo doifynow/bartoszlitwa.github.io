@@ -1,0 +1,651 @@
+{
+  "observedAt": "2026-10-23T13:21:17Z",
+  "method": "Anonymous bounded GET; three workers; no credentials; 18-second timeout; 3 MB body limit",
+  "results": [
+    {
+      "requested": "https://doifynow.com/",
+      "chain": [
+        {
+          "url": "https://doifynow.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://doifynow.com/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://doifynow.com/"],
+      "robots": ["index, follow"],
+      "bytes": 11213,
+      "sha256": "5caec01691a23af2c65faf94f03f334f3988429f21f56c99a40c7d453e800f88",
+      "seconds": 0.067,
+      "productNames": [
+        "DoifyNow",
+        "RentifyNow",
+        "HouseifyNow",
+        "GoalifyNow",
+        "DeployifyNow",
+        "PostifyNow",
+        "LeadifyNow",
+        "InsightifyNow",
+        "SupportifyNow"
+      ],
+      "observeContext": [],
+      "observeAnchors": []
+    },
+    {
+      "requested": "https://rentifynow.com/",
+      "chain": [
+        {
+          "url": "https://rentifynow.com/",
+          "status": 301,
+          "location": "https://rentifynow.com/pl/"
+        },
+        {
+          "url": "https://rentifynow.com/pl/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://rentifynow.com/pl/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "canonical": ["https://rentifynow.com/pl/"],
+      "robots": ["index, follow"],
+      "bytes": 47647,
+      "sha256": "98460c31b556284a4ee8077274b945e2dbb6cf7ac70992efc6a18d05fabca1ee",
+      "seconds": 0.119,
+      "productNames": ["DoifyNow", "RentifyNow"]
+    },
+    {
+      "requested": "https://houseifynow.com/",
+      "chain": [
+        {
+          "url": "https://houseifynow.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://houseifynow.com/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://houseifynow.com/"],
+      "robots": ["index, follow"],
+      "bytes": 11410,
+      "sha256": "d9438ddd8ef0fd3e3b68ebee045e07b8690c502d5a947e6a3d2a62bdd0ac7b24",
+      "seconds": 0.06,
+      "productNames": ["DoifyNow", "HouseifyNow"]
+    },
+    {
+      "requested": "https://goalifynow.com/",
+      "chain": [
+        {
+          "url": "https://goalifynow.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://goalifynow.com/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://goalifynow.com/"],
+      "robots": ["index, follow"],
+      "bytes": 105610,
+      "sha256": "758b553066c1d109c4b19a98a3a39b6aa646f9a2708135fc9dda23df940297d4",
+      "seconds": 0.078,
+      "productNames": ["DoifyNow", "GoalifyNow"]
+    },
+    {
+      "requested": "https://deployifynow.com/",
+      "chain": [
+        {
+          "url": "https://deployifynow.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://deployifynow.com/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://deployifynow.com/"],
+      "robots": ["index, follow"],
+      "bytes": 17584,
+      "sha256": "b980c38bc0478a8562c6f9371c873f5b8488b29fe27942a4d3dee8d5ea623c25",
+      "seconds": 0.082,
+      "productNames": ["DoifyNow", "DeployifyNow"]
+    },
+    {
+      "requested": "https://postifynow.app/",
+      "chain": [
+        {
+          "url": "https://postifynow.app/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://postifynow.app/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": "index,follow",
+      "canonical": ["https://postifynow.app/"],
+      "robots": ["index,follow"],
+      "bytes": 45196,
+      "sha256": "88a9867ddd9b5587b78ef46b8850a479d556b1fdb7f2fac1736e86216c49bb03",
+      "seconds": 0.049,
+      "productNames": ["DoifyNow", "PostifyNow"]
+    },
+    {
+      "requested": "https://observe.doifynow.com/",
+      "chain": [
+        {
+          "url": "https://observe.doifynow.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://observe.doifynow.com/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://observe.doifynow.com/"],
+      "robots": [],
+      "bytes": 26423,
+      "sha256": "b8a9414535a5b5c77e280f12388c04416f73797abea9015458f995815bca2f19",
+      "seconds": 0.04,
+      "productNames": ["DoifyNow", "ObserveifyNow"]
+    },
+    {
+      "requested": "https://leadify.doifynow.com/",
+      "chain": [
+        {
+          "url": "https://leadify.doifynow.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://leadify.doifynow.com/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://leadify.doifynow.com/"],
+      "robots": ["index,follow"],
+      "bytes": 2674,
+      "sha256": "c0dc25a00b5e113eaa448d73f9cf93316e8f1485c4a7ae335bcf45ef47a7cb61",
+      "seconds": 0.049,
+      "productNames": ["DoifyNow", "LeadifyNow"]
+    },
+    {
+      "requested": "https://insight.doifynow.com/",
+      "chain": [
+        {
+          "url": "https://insight.doifynow.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://insight.doifynow.com/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://insight.doifynow.com/"],
+      "robots": [],
+      "bytes": 6299,
+      "sha256": "3c16f7fbeca7d5b039bcbd330a0b84a12af34b9a4277df322c5544b8a9c4da29",
+      "seconds": 0.04,
+      "productNames": ["DoifyNow", "InsightifyNow"]
+    },
+    {
+      "requested": "https://support.doifynow.com/",
+      "chain": [
+        {
+          "url": "https://support.doifynow.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://support.doifynow.com/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://support.doifynow.com/"],
+      "robots": ["index,follow"],
+      "bytes": 17668,
+      "sha256": "803233897ecf763e661e26a9de7a96ff1f8189f3dea303042d21f049828879c6",
+      "seconds": 0.05,
+      "productNames": ["DoifyNow", "RentifyNow", "SupportifyNow"]
+    },
+    {
+      "requested": "https://litwa.dev/",
+      "chain": [
+        {
+          "url": "https://litwa.dev/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://litwa.dev/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://litwa.dev/"],
+      "robots": ["index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"],
+      "bytes": 43699,
+      "sha256": "1235089d361f814c801e67262e66a49db66d877e3faf217cf0625c7a1adf4533",
+      "seconds": 0.085,
+      "productNames": [
+        "DoifyNow",
+        "RentifyNow",
+        "HouseifyNow",
+        "GoalifyNow",
+        "DeployifyNow",
+        "PostifyNow",
+        "LeadifyNow",
+        "InsightifyNow",
+        "SupportifyNow"
+      ]
+    },
+    {
+      "requested": "https://doifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://doifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://doifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 65,
+      "sha256": "161a61d6d1a82ad303eda0aacc0e2e528bb8d7b523eb917dba08a8cbd2b624df",
+      "seconds": 0.037,
+      "productNames": ["DoifyNow"],
+      "body": "User-agent: *\nAllow: /\nSitemap: https://doifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://rentifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://rentifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://rentifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 2780,
+      "sha256": "d296c96b1541fa3d22bfb14968c3519f86f312056a9a231697a1a33ce45516c6",
+      "seconds": 0.064,
+      "productNames": ["RentifyNow"],
+      "body": "# RentifyNow Robots.txt\n# https://www.robotstxt.org/robotstxt.html\n\nUser-agent: *\n\n# Allow all public pages\nAllow: /\nAllow: /about\nAllow: /pricing\nAllow: /landlords/\nAllow: /blog\nAllow: /docs\nAllow: /changelog\nAllow: /legal\nAllow: /properties\nAllow: /rentals\n\n# Disallow private/authenticated pages\nDisallow: /auth\nDisallow: /profile\nDisallow: /analytics\nDisallow: /finances\nDisallow: /documents\nDisallow: /investments\nDisallow: /net-worth\nDisallow: /rent-payments\nDisallow: /invoices\nDisallow: /inventories\nDisallow: /tenants\nDisallow: /tenant-dashboard\nDisallow: /onboarding\nDisallow: /billing\nDisallow: /security\nDisallow: /communications\nDisallow: /tasks\nDisallow: /floor-plans\nDisallow: /maintenance\nDisallow: /ai-assistant\n\n# The same private areas are mounted below country prefixes.\nDisallow: /*/auth\nDisallow: /*/profile\nDisallow: /*/analytics\nDisallow: /*/finances\nDisallow: /*/documents\nDisallow: /*/investments\nDisallow: /*/net-worth\nDisallow: /*/rent-payments\nDisallow: /*/invoices\nDisallow: /*/inventories\nDisallow: /*/tenants\nDisallow: /*/tenant-dashboard\nDisallow: /*/onboarding\nDisallow: /*/billing\nDisallow: /*/security\nDisallow: /*/communications\nDisallow: /*/tasks\nDisallow: /*/floor-plans\nDisallow: /*/maintenance\nDisallow: /*/ai-assistant\nDisallow: /*/admin\n\n# Additional private workspace areas\nDisallow: /landlord-dashboard\nDisallow: /*/landlord-dashboard\nDisallow: /landlord/maintenance\nDisallow: /*/landlord/maintenance\nDisallow: /tenant/maintenance\nDisallow: /*/tenant/maintenance\nDisallow: /security-deposits\nDisallow: /*/security-deposits\nDisallow: /access-devices\nDisallow: /*/access-devices\nDisallow: /inspections\nDisallow: /*/inspections\nDisallow: /*/assets\nDisallow: /checklists\nDisallow: /*/checklists\nDisallow: /late-fees\nDisallow: /*/late-fees\nDisallow: /delegations\nDisallow: /*/delegations\nDisallow: /workflows\nDisallow: /*/workflows\nDisallow: /tax\nDisallow: /*/tax\nDisallow: /compliance\nDisallow: /*/compliance\nDisallow: /incidents\nDisallow: /*/incidents\nDisallow: /notifications\nDisallow: /*/notifications\n\n# Private routes without a public rendering-resource collision\nDisallow: /assets$\nDisallow: /activity-dashboard\nDisallow: /*/activity-dashboard\nDisallow: /invitation\nDisallow: /*/invitation\n\n# Disallow API endpoints\nDisallow: /api/\n\n# Disallow admin/system paths\nDisallow: /admin\nDisallow: /_next/\nDisallow: /*.json$\n\n# Public rendering resources must remain crawlable despite the JSON restriction.\nAllow: /assets/languages/\nAllow: /assets/content/docs/navigation.json\nAllow: /assets/content/blog/posts.json\nAllow: /assets/content/changelog/releases.json\n\n# The unauthenticated offered-plan catalogue is needed to render public pricing.\nAllow: /auth/api/billing/plans$\n\n# Sitemap location\nSitemap: https://rentifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://houseifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://houseifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://houseifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 333,
+      "sha256": "d9d3e1d6d7636d964d78e273a4e88010d1823616a3ee2295fe84b6676103521f",
+      "seconds": 0.064,
+      "productNames": ["HouseifyNow"],
+      "body": "User-agent: *\nAllow: /\nDisallow: /dashboard\nDisallow: /household\nDisallow: /cleaning\nDisallow: /chores\nDisallow: /shopping\nDisallow: /supplies\nDisallow: /laundry\nDisallow: /calendar\nDisallow: /gamification\nDisallow: /billing\nDisallow: /audit\nDisallow: /settings\nDisallow: /notifications\n\nSitemap: https://houseifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://goalifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://goalifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://goalifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 145,
+      "sha256": "96fa6dbf4316b638292007fa049863445c77d1f397b22a2cc23894f963aec509",
+      "seconds": 0.05,
+      "productNames": ["GoalifyNow"],
+      "body": "User-agent: *\nAllow: /\n\n# Account and private routes send noindex; allow crawling so it can be read.\nSitemap: https://goalifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://deployifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://deployifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://deployifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 331,
+      "sha256": "1b85e9402743f492db25584464f7992613b7267dfd9c4cd504c5621bcd68e79b",
+      "seconds": 0.057,
+      "productNames": ["DeployifyNow"],
+      "body": "User-agent: *\nAllow: /\nAllow: /pricing\nAllow: /terms\nAllow: /privacy\nAllow: /cookies\nAllow: /acceptable-use\nDisallow: /templates\nDisallow: /dashboard\nDisallow: /projects\nDisallow: /settings\nDisallow: /billing\nDisallow: /monitoring\nDisallow: /analytics\nDisallow: /auth\nDisallow: /api/\n\nSitemap: https://deployifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://postifynow.app/robots.txt",
+      "chain": [
+        {
+          "url": "https://postifynow.app/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://postifynow.app/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": "noindex,follow",
+      "canonical": [],
+      "robots": [],
+      "bytes": 413,
+      "sha256": "ab2551761a35c15f4cb2ae976d1adabc2adb5babfeb539a4db7e5493b23c3f80",
+      "seconds": 0.07,
+      "productNames": ["PostifyNow"],
+      "body": "User-agent: *\nAllow: /\nDisallow: /sign-in\nDisallow: /password-recovery\nDisallow: /overview\nDisallow: /welcome\nDisallow: /settings\nDisallow: /notifications\nDisallow: /compose\nDisallow: /calendar\nDisallow: /deliveries\nDisallow: /connections\nDisallow: /billing\nDisallow: /developer\nDisallow: /admin\nDisallow: /organic\nDisallow: /api/\nDisallow: /scalar\nDisallow: /openapi\n\nSitemap: https://postifynow.app/sitemap.xml\n"
+    },
+    {
+      "requested": "https://observe.doifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://observe.doifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://observe.doifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 74,
+      "sha256": "4ea0d3d471c112f941148a0809e52677472d8ce8d5ffd48b79e9859bb036146a",
+      "seconds": 0.062,
+      "productNames": ["DoifyNow"],
+      "body": "User-agent: *\nAllow: /\n\nSitemap: https://observe.doifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://leadify.doifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://leadify.doifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://leadify.doifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 135,
+      "sha256": "d21cf742b77151f271330ff1eb97c14600ccc81d68fbada87db60c27be6a8fd2",
+      "seconds": 0.076,
+      "productNames": ["DoifyNow"],
+      "body": "User-agent: *\nAllow: /\nAllow: /api/v1/billing/plans$\nDisallow: /api/\nDisallow: /seo/\nSitemap: https://leadify.doifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://insight.doifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://insight.doifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://insight.doifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 98,
+      "sha256": "3dd5c4701bc87cbced7d7de35bb4222eabd1b2e81bbad26e45f311bb14338846",
+      "seconds": 0.062,
+      "productNames": ["DoifyNow"],
+      "body": "User-agent: *\nDisallow: /api/\nDisallow: /auth/\n\nSitemap: https://insight.doifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://support.doifynow.com/robots.txt",
+      "chain": [
+        {
+          "url": "https://support.doifynow.com/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://support.doifynow.com/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 223,
+      "sha256": "8c3d7a9722876a833c9066d53493a7282b290bf51050855db61270ca09dbc3da",
+      "seconds": 0.034,
+      "productNames": ["DoifyNow"],
+      "body": "User-agent: *\nAllow: /\n\nDisallow: /api/\nDisallow: /auth/\nDisallow: /auth-api/\nDisallow: /demo/\nDisallow: /embed/\nDisallow: /health\nDisallow: /widget\nDisallow: /workspaces/\n\nSitemap: https://support.doifynow.com/sitemap.xml\n"
+    },
+    {
+      "requested": "https://litwa.dev/robots.txt",
+      "chain": [
+        {
+          "url": "https://litwa.dev/robots.txt",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://litwa.dev/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 62,
+      "sha256": "91ef287d946ec1f4d46fa9b9d11991f323c831609d011f15ca605c9f2cffb8b1",
+      "seconds": 0.082,
+      "productNames": [],
+      "body": "User-agent: *\nAllow: /\nSitemap: https://litwa.dev/sitemap.xml\n"
+    },
+    {
+      "requested": "http://litwa.dev/",
+      "chain": [
+        {
+          "url": "http://litwa.dev/",
+          "status": 301,
+          "location": "https://litwa.dev/"
+        },
+        {
+          "url": "https://litwa.dev/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://litwa.dev/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://litwa.dev/"],
+      "robots": ["index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"],
+      "bytes": 43699,
+      "sha256": "1235089d361f814c801e67262e66a49db66d877e3faf217cf0625c7a1adf4533",
+      "seconds": 0.091,
+      "productNames": [
+        "DoifyNow",
+        "RentifyNow",
+        "HouseifyNow",
+        "GoalifyNow",
+        "DeployifyNow",
+        "PostifyNow",
+        "LeadifyNow",
+        "InsightifyNow",
+        "SupportifyNow"
+      ]
+    },
+    {
+      "requested": "http://www.litwa.dev/",
+      "chain": [
+        {
+          "url": "http://www.litwa.dev/",
+          "status": 301,
+          "location": "https://litwa.dev/"
+        },
+        {
+          "url": "https://litwa.dev/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://litwa.dev/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://litwa.dev/"],
+      "robots": ["index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"],
+      "bytes": 43699,
+      "sha256": "1235089d361f814c801e67262e66a49db66d877e3faf217cf0625c7a1adf4533",
+      "seconds": 0.1,
+      "productNames": [
+        "DoifyNow",
+        "RentifyNow",
+        "HouseifyNow",
+        "GoalifyNow",
+        "DeployifyNow",
+        "PostifyNow",
+        "LeadifyNow",
+        "InsightifyNow",
+        "SupportifyNow"
+      ]
+    },
+    {
+      "requested": "https://www.litwa.dev/",
+      "chain": [
+        {
+          "url": "https://www.litwa.dev/",
+          "status": 301,
+          "location": "https://litwa.dev/"
+        },
+        {
+          "url": "https://litwa.dev/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://litwa.dev/",
+      "status": 200,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": ["https://litwa.dev/"],
+      "robots": ["index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"],
+      "bytes": 43699,
+      "sha256": "1235089d361f814c801e67262e66a49db66d877e3faf217cf0625c7a1adf4533",
+      "seconds": 0.092,
+      "productNames": [
+        "DoifyNow",
+        "RentifyNow",
+        "HouseifyNow",
+        "GoalifyNow",
+        "DeployifyNow",
+        "PostifyNow",
+        "LeadifyNow",
+        "InsightifyNow",
+        "SupportifyNow"
+      ]
+    },
+    {
+      "requested": "https://litwa.dev/sitemap.xml",
+      "chain": [
+        {
+          "url": "https://litwa.dev/sitemap.xml",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://litwa.dev/sitemap.xml",
+      "status": 200,
+      "contentType": "text/xml",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 360,
+      "sha256": "08cf415c35279945625004691c196e9ebebc78ed7c9998bb4cc82aac618dca85",
+      "seconds": 0.059,
+      "productNames": [],
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n  <url>\n    <loc>https://litwa.dev/</loc>\n  </url>\n</urlset>\n"
+    },
+    {
+      "requested": "https://litwa.dev/manifest.json",
+      "chain": [
+        {
+          "url": "https://litwa.dev/manifest.json",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://litwa.dev/manifest.json",
+      "status": 200,
+      "contentType": "application/json",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 551,
+      "sha256": "261837d6f46143573103b8fa01f40c57665dbb94950c0cf166331a4ca90597e1",
+      "seconds": 0.05,
+      "productNames": ["DoifyNow", "RentifyNow", "PostifyNow"],
+      "body": "{\n  \"short_name\": \"Bartosz Litwa\",\n  \"name\": \"Bartosz Litwa - AI-Native Company and Product Portfolio\",\n  \"description\": \"DoifyNow, RentifyNow, PostifyNow, and a focused AI-native product family\",\n  \"icons\": [\n    {\n      \"src\": \"/favicon.ico\",\n      \"sizes\": \"256x256\",\n      \"type\": \"image/x-icon\"\n    }\n  ],\n  \"start_url\": \".\",\n  \"display\": \"standalone\",\n  \"theme_color\": \"#050507\",\n  \"background_color\": \"#050507\",\n  \"categories\": [\"business\", \"productivity\", \"portfolio\"],\n  \"lang\": \"en-US\",\n  \"dir\": \"ltr\",\n  \"orientation\": \"portrait-primary\"\n}\n"
+    },
+    {
+      "requested": "https://litwa.dev/ahrefs-family-20261023-missing",
+      "chain": [
+        {
+          "url": "https://litwa.dev/ahrefs-family-20261023-missing",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "finalUrl": "https://litwa.dev/ahrefs-family-20261023-missing",
+      "status": 404,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "canonical": [],
+      "robots": [],
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "seconds": 0.055,
+      "productNames": []
+    }
+  ]
+}

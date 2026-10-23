@@ -1,0 +1,14 @@
+[
+  {
+    "file": "litwa_23-oct-2026_internal-urls_2026-10-23_15-35-35.csv",
+    "rows": 25,
+    "sha256": "a3501bddc7a0103d7c22faafa0461f43f316eba033ac057cfb5859009e16f0c4",
+    "provenance": "Full native Ahrefs export supplied by root; independently verified local bytes; unchanged CSV"
+  },
+  {
+    "file": "litwa_23-oct-2026_links_2026-10-23_15-35-38.csv",
+    "rows": 36,
+    "sha256": "d77380429fc263e199cba1c70c883ff7bf172d8048bb8ca2ace9bf8a4f671c0a",
+    "provenance": "Full native Ahrefs export supplied by root; independently verified local bytes; unchanged CSV"
+  }
+]

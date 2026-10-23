@@ -11,21 +11,23 @@ const expectedProductStages = {
   goalifynow: 'building',
   deployifynow: 'building',
   postifynow: 'active-build',
+  observeifynow: 'active-build',
   leadifynow: 'discovery',
   insightifynow: 'discovery',
   supportifynow: 'discovery'
 } as const;
 
 const expectedProductUrls = {
-  doifynow: 'https://doifynow.com',
-  rentifynow: 'https://rentifynow.com',
-  houseifynow: 'https://houseifynow.com',
-  goalifynow: 'https://goalifynow.com',
-  deployifynow: 'https://deployifynow.com',
-  postifynow: 'https://postifynow.app',
-  leadifynow: 'https://leadify.doifynow.com',
-  insightifynow: 'https://insight.doifynow.com',
-  supportifynow: 'https://support.doifynow.com'
+  doifynow: 'https://doifynow.com/',
+  rentifynow: 'https://rentifynow.com/pl/',
+  houseifynow: 'https://houseifynow.com/',
+  goalifynow: 'https://goalifynow.com/',
+  deployifynow: 'https://deployifynow.com/',
+  postifynow: 'https://postifynow.app/',
+  observeifynow: 'https://observe.doifynow.com/',
+  leadifynow: 'https://leadify.doifynow.com/',
+  insightifynow: 'https://insight.doifynow.com/',
+  supportifynow: 'https://support.doifynow.com/'
 } as const;
 
 const scalarPaths = (value: unknown, prefix = ''): string[] => {

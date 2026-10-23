@@ -28,7 +28,7 @@ try {
   await text(prelude);
   const markup = renderToStaticMarkup(createElement(App));
   assert.match(markup, /<h1\b/, 'The static document must contain the real hero.');
-  assert.match(markup, /href="https:\/\/doifynow.com"/, 'Keep product links in initial HTML.');
+  assert.match(markup, /href="https:\/\/doifynow.com\/"/, 'Keep product links in initial HTML.');
   assert.ok(
     !/<script\b|role="status"/.test(markup),
     `Static content must not need reveal scripts: ${markup.match(/.{0,40}(?:<script\b|role="status").{0,120}/g)}`

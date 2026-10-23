@@ -1,0 +1,256 @@
+{
+  "observedAt": "2026-10-23T13:41:39Z",
+  "method": "All 25 exact native internal URLs; anonymous bounded GET; no redirects followed; 15-second timeout; 3 MB cap; three workers",
+  "results": [
+    {
+      "url": "https://litwa.dev/",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html",
+      "xRobotsTag": null,
+      "bytes": 43699,
+      "sha256": "1235089d361f814c801e67262e66a49db66d877e3faf217cf0625c7a1adf4533",
+      "seconds": 0.125
+    },
+    {
+      "url": "https://litwa.dev/assets/logo-DvyJHJ9Q.webp",
+      "status": 200,
+      "location": null,
+      "contentType": "image/webp",
+      "xRobotsTag": null,
+      "bytes": 10630,
+      "sha256": "72122551bf87250d118cbbca2bb818b1d0d796633635ad93e49ea3ed88e01da1",
+      "seconds": 0.104
+    },
+    {
+      "url": "https://litwa.dev/assets/Experience-D5YUZW1r.css",
+      "status": 200,
+      "location": null,
+      "contentType": "text/css",
+      "xRobotsTag": null,
+      "bytes": 2618,
+      "sha256": "c5e946f4d8c8314dade2a25f2fa0be8bb13425d3d656064865f8c5d78c7e5f2b",
+      "seconds": 0.099
+    },
+    {
+      "url": "https://litwa.dev/assets/pzpl-D-C-Blt8.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 13154,
+      "sha256": "82a4af82990c3200eef41c2c25a64da9d2feffc1a2d8814276ac11e18e544bde",
+      "seconds": 0.04
+    },
+    {
+      "url": "https://litwa.dev/assets/Footer-BNTT43th.css",
+      "status": 200,
+      "location": null,
+      "contentType": "text/css",
+      "xRobotsTag": null,
+      "bytes": 2456,
+      "sha256": "fb39a31e40e71e3d3766be54b3924917a92d4813107343a0f885f2d5db102cc6",
+      "seconds": 0.045
+    },
+    {
+      "url": "https://litwa.dev/product-icons/goalifynow.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 26186,
+      "sha256": "57ba98a5f3668edbf5554c03031c1023564d199c358a38b861422bad1fedbee2",
+      "seconds": 0.046
+    },
+    {
+      "url": "https://litwa.dev/product-icons/supportifynow.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 12305,
+      "sha256": "3b4971fcdf3cae15a51ecafdf8750e564a3aae4cec409dd456ad7374f67fd9d4",
+      "seconds": 0.049
+    },
+    {
+      "url": "https://litwa.dev/product-icons/doifynow.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 18786,
+      "sha256": "8160fc90dd3606dbb27969c9f48c23d7eefe338886883a61824025845a5f5e8b",
+      "seconds": 0.034
+    },
+    {
+      "url": "https://litwa.dev/assets/Certifications-CnZnbili.css",
+      "status": 200,
+      "location": null,
+      "contentType": "text/css",
+      "xRobotsTag": null,
+      "bytes": 1522,
+      "sha256": "e615f5b1c743aae173fc383abfb582a10819cbcb2f685e4db2be0c71981a581e",
+      "seconds": 0.037
+    },
+    {
+      "url": "https://litwa.dev/product-icons/houseifynow.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 167782,
+      "sha256": "1cc46e69eb1b2abde55b7720643a855ffced46ed3854ff1db6ba47777cf275b9",
+      "seconds": 0.044
+    },
+    {
+      "url": "https://litwa.dev/assets/index-ByKdiF2U.js",
+      "status": 200,
+      "location": null,
+      "contentType": "application/javascript",
+      "xRobotsTag": null,
+      "bytes": 303952,
+      "sha256": "ae61671d87e7a290bac1eae8933affd28d3fc8b1501679081322b0e670585267",
+      "seconds": 0.049
+    },
+    {
+      "url": "https://litwa.dev/product-icons/rentifynow.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 92954,
+      "sha256": "644e50f015dd95f4261b2bf98c2dab8ee0dad233e3dcf5caa466e53d79b930b3",
+      "seconds": 0.031
+    },
+    {
+      "url": "https://litwa.dev/product-icons/insightifynow.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 60866,
+      "sha256": "17886e1a198db244e488231ed099ad3e522207db41dab97f60801e719bb6dda5",
+      "seconds": 0.049
+    },
+    {
+      "url": "https://litwa.dev/product-icons/leadifynow.svg",
+      "status": 200,
+      "location": null,
+      "contentType": "image/svg+xml",
+      "xRobotsTag": null,
+      "bytes": 226,
+      "sha256": "1544144fc7d9be7d40f97f30ca51835dc6623754f8a28d4fcae44db63fa69b8d",
+      "seconds": 0.04
+    },
+    {
+      "url": "https://litwa.dev/product-icons/postifynow.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 17191,
+      "sha256": "c67d5e839bbfedb0d8e6b12d08c03f62b58b21fafdc4da5d2870b70569c244eb",
+      "seconds": 0.062
+    },
+    {
+      "url": "https://litwa.dev/product-icons/deployifynow.svg",
+      "status": 200,
+      "location": null,
+      "contentType": "image/svg+xml",
+      "xRobotsTag": null,
+      "bytes": 368,
+      "sha256": "1c63d8bedc03107addfa44c7b7122a885fc2263a207b9e60af8f26875021b62a",
+      "seconds": 0.056
+    },
+    {
+      "url": "https://litwa.dev/assets/codedProjects-BB_1SCkd.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "bytes": 5022,
+      "sha256": "ce297fa99916652bff4f8edcb6d9860f1dd736f9744a90ea5f7160d3a1efe64b",
+      "seconds": 0.087
+    },
+    {
+      "url": "https://litwa.dev/Bartosz_Litwa_CV.pdf",
+      "status": 200,
+      "location": null,
+      "contentType": "application/pdf",
+      "xRobotsTag": null,
+      "bytes": 2682,
+      "sha256": "e7d7dd6b5100020f7186c9f4957b30be1ceb64c537630899e4110e36b728cc1b",
+      "seconds": 0.038
+    },
+    {
+      "url": "https://litwa.dev/assets/index-Cb7Wq3tL.css",
+      "status": 200,
+      "location": null,
+      "contentType": "text/css",
+      "xRobotsTag": null,
+      "bytes": 243985,
+      "sha256": "d1b5af986684b914be979fe3df7e3bb8f430e9cc885a7d1c612960bcefdcff38",
+      "seconds": 0.058
+    },
+    {
+      "url": "https://litwa.dev/assets/SimpleBanner-CGcP7Mxj.css",
+      "status": 200,
+      "location": null,
+      "contentType": "text/css",
+      "xRobotsTag": null,
+      "bytes": 1522,
+      "sha256": "ffbe0d695d58ab315040265e6b6d88343d753a58ea80781cd11e6985908f4a1c",
+      "seconds": 0.065
+    },
+    {
+      "url": "http://litwa.dev/",
+      "status": 301,
+      "location": "https://litwa.dev/",
+      "contentType": "text/html; charset=UTF-8",
+      "xRobotsTag": null,
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "seconds": 0.029
+    },
+    {
+      "url": "https://www.litwa.dev/",
+      "status": 301,
+      "location": "https://litwa.dev/",
+      "contentType": "text/html; charset=UTF-8",
+      "xRobotsTag": null,
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "seconds": 0.075
+    },
+    {
+      "url": "http://www.litwa.dev/",
+      "status": 301,
+      "location": "https://litwa.dev/",
+      "contentType": "text/html; charset=UTF-8",
+      "xRobotsTag": null,
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "seconds": 0.053
+    },
+    {
+      "url": "https://litwa.dev/sitemap.xml",
+      "status": 200,
+      "location": null,
+      "contentType": "text/xml",
+      "xRobotsTag": null,
+      "bytes": 360,
+      "sha256": "08cf415c35279945625004691c196e9ebebc78ed7c9998bb4cc82aac618dca85",
+      "seconds": 0.073
+    },
+    {
+      "url": "https://litwa.dev/robots.txt",
+      "status": 200,
+      "location": null,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "bytes": 62,
+      "sha256": "91ef287d946ec1f4d46fa9b9d11991f323c831609d011f15ca605c9f2cffb8b1",
+      "seconds": 0.041
+    }
+  ]
+}

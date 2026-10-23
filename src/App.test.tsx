@@ -23,7 +23,7 @@ describe('App', () => {
     ).toBeInTheDocument();
 
     const productCards = document.querySelectorAll('[data-product-id]');
-    expect(productCards).toHaveLength(9);
+    expect(productCards).toHaveLength(10);
 
     for (const name of [
       'DoifyNow',
@@ -32,6 +32,7 @@ describe('App', () => {
       'GoalifyNow',
       'DeployifyNow',
       'PostifyNow',
+      'ObserveifyNow',
       'LeadifyNow',
       'InsightifyNow',
       'SupportifyNow'
@@ -45,17 +46,18 @@ describe('App', () => {
     expect(postifyCard).not.toBeNull();
     expect(within(deployifyCard as HTMLElement).getByRole('link')).toHaveAttribute(
       'href',
-      'https://deployifynow.com'
+      'https://deployifynow.com/'
     );
     expect(within(postifyCard as HTMLElement).getByRole('link')).toHaveAttribute(
       'href',
-      'https://postifynow.app'
+      'https://postifynow.app/'
     );
 
     const hostedProducts = {
-      postifynow: 'https://postifynow.app',
-      insightifynow: 'https://insight.doifynow.com',
-      supportifynow: 'https://support.doifynow.com'
+      postifynow: 'https://postifynow.app/',
+      observeifynow: 'https://observe.doifynow.com/',
+      insightifynow: 'https://insight.doifynow.com/',
+      supportifynow: 'https://support.doifynow.com/'
     } as const;
     for (const [id, url] of Object.entries(hostedProducts)) {
       const card = document.querySelector(`[data-product-id="${id}"]`);

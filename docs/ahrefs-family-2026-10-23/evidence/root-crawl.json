@@ -1,0 +1,20 @@
+{
+  "project": 10563823,
+  "observedDate": "2026-10-23",
+  "status": "Completed",
+  "completedDisplayedTime": "15:14 Europe/Warsaw",
+  "healthScore": 100,
+  "aiScore": 100,
+  "internalUrls": 5,
+  "internalUrlsWithErrors": 0,
+  "actualCategories": 6,
+  "summary": "redirectlinks1; redirected-noincoming1; redirects3; HTTPtoHTTPS2; slow1; externalredirect1. No broken image categories.",
+  "source": "Root authenticated Ahrefs Actual issue table read via Zen Browser; first number is Crawled; overlapping counts; no worker credentials or crawl restart.",
+  "attribution": "Completed pre-implementation crawl; no gain attributable to this task. Rounded dashboard DR 6 and 696 referring domains are supplied observations, not remeasured here.",
+  "sharedScreenshot": {
+    "url": "https://truenas-vm.tail341687.ts.net:8446/artifacts/fleet-agent-bartoszs-macbook-pro/8ea571d4f2dc4bbaa754579fd77cb33c/ahrefs-all-eight-completed-crawls-2026-10-23.png",
+    "rootVerifiedSha256": "1f0fa0ef8a4a5d36d4b7dd5376a1f26e228ad21b08f07f352dd8bb969286e94a",
+    "expires": "2026-10-30"
+  },
+  "allocationCorrection": "11 owners on healthy workers 2/3/4 as 4/4/3. Worker 1 HTTP failed during launch; no thread created there, no restart or access change."
+}

@@ -55,7 +55,7 @@ describe('App', () => {
 
     const hostedProducts = {
       postifynow: 'https://postifynow.app/',
-      observeifynow: 'https://observe.doifynow.com/',
+      observeifynow: 'https://observeifynow.com/',
       insightifynow: 'https://insight.doifynow.com/',
       supportifynow: 'https://support.doifynow.com/'
     } as const;

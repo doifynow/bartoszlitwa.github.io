@@ -15,7 +15,7 @@ const PRODUCT_NAMES = [
 
 const VERIFIED_HOSTED_PRODUCT_URLS = {
   PostifyNow: 'https://postifynow.app/',
-  ObserveifyNow: 'https://observe.doifynow.com/',
+  ObserveifyNow: 'https://observeifynow.com/',
   LeadifyNow: 'https://leadify.doifynow.com/',
   InsightifyNow: 'https://insight.doifynow.com/',
   SupportifyNow: 'https://support.doifynow.com/'

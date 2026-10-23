@@ -24,7 +24,7 @@ const expectedProductUrls = {
   goalifynow: 'https://goalifynow.com/',
   deployifynow: 'https://deployifynow.com/',
   postifynow: 'https://postifynow.app/',
-  observeifynow: 'https://observe.doifynow.com/',
+  observeifynow: 'https://observeifynow.com/',
   leadifynow: 'https://leadify.doifynow.com/',
   insightifynow: 'https://insight.doifynow.com/',
   supportifynow: 'https://support.doifynow.com/'

@@ -65,7 +65,10 @@ const CompanyEcosystem = () => {
               <img src={company.icon} alt="" width="64" height="64" />
               <strong>{company.name}</strong>
             </a>
-            <div className="company-system-products">
+            <div
+              className="company-system-products"
+              style={{ '--product-count': productFamily.length } as React.CSSProperties}
+            >
               {productFamily.map((product, index) => {
                 const content = (
                   <>
@@ -150,7 +153,7 @@ const CompanyEcosystem = () => {
                         rel="noopener noreferrer"
                         aria-label={`${t('ecosystem.visitProduct')} ${product.name}`}
                       >
-                        {t('ecosystem.visitProduct')}
+                        {product.name}
                         <ArrowUpRight aria-hidden="true" />
                       </a>
                     ) : (

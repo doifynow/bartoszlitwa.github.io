@@ -7,16 +7,18 @@ const PRODUCT_NAMES = [
   'GoalifyNow',
   'DeployifyNow',
   'PostifyNow',
+  'ObserveifyNow',
   'LeadifyNow',
   'InsightifyNow',
   'SupportifyNow'
 ] as const;
 
 const VERIFIED_HOSTED_PRODUCT_URLS = {
-  PostifyNow: 'https://postifynow.app',
-  LeadifyNow: 'https://leadify.doifynow.com',
-  InsightifyNow: 'https://insight.doifynow.com',
-  SupportifyNow: 'https://support.doifynow.com'
+  PostifyNow: 'https://postifynow.app/',
+  ObserveifyNow: 'https://observe.doifynow.com/',
+  LeadifyNow: 'https://leadify.doifynow.com/',
+  InsightifyNow: 'https://insight.doifynow.com/',
+  SupportifyNow: 'https://support.doifynow.com/'
 } as const;
 
 const openPortfolio = async (page: Page) => {
@@ -79,7 +81,9 @@ test.describe('portfolio journeys', () => {
     await expect(navigation.locator('a.navbar-link[href="#skills"]')).toHaveCount(0);
   });
 
-  test('renders the nine-product ecosystem with honest link and stage states', async ({ page }) => {
+  test('renders the complete product ecosystem with honest link and stage states', async ({
+    page
+  }) => {
     await openPortfolio(page);
 
     const ecosystem = page.locator('#ecosystem');

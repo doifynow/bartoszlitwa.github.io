@@ -1,0 +1,33 @@
+{
+  "htmlSha256": "c26c6b1baa3867d96bbf59b25eada92b71225f1be3e6b69332ae4b5f75629921",
+  "bytes": 46132,
+  "h1Count": 1,
+  "canonical": ["https://litwa.dev/"],
+  "productIds": [
+    "doifynow",
+    "rentifynow",
+    "postifynow",
+    "houseifynow",
+    "goalifynow",
+    "deployifynow",
+    "observeifynow",
+    "leadifynow",
+    "insightifynow",
+    "supportifynow"
+  ],
+  "initialHtmlDirectLinkCounts": {
+    "DoifyNow": 2,
+    "RentifyNow": 2,
+    "HouseifyNow": 2,
+    "GoalifyNow": 2,
+    "DeployifyNow": 2,
+    "PostifyNow": 2,
+    "ObserveifyNow": 2,
+    "LeadifyNow": 2,
+    "InsightifyNow": 2,
+    "SupportifyNow": 2
+  },
+  "observeIconSha256": "50b3ba6365dd01ba74cc5d9031ac67f60fe21621a756fe11be6d45b9f91479ef",
+  "iconSource": "https://observe.doifynow.com/favicon.svg",
+  "role": "Factual public initial HTML snapshot; mounted and Polish behavior tested separately"
+}

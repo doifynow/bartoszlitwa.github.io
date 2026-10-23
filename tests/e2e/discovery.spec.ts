@@ -1,4 +1,54 @@
 import { expect, test } from '@playwright/test';
+import products from '../../src/data/products.json' with { type: 'json' };
+
+for (const javaScriptEnabled of [false, true]) {
+  test(`exposes the complete public family with JavaScript ${javaScriptEnabled ? 'enabled' : 'disabled'}`, async ({
+    browser,
+    baseURL,
+    viewport
+  }) => {
+    const context = await browser.newContext({ javaScriptEnabled, baseURL, viewport });
+    try {
+      const page = await context.newPage();
+      await page.goto('/');
+      await expect(page.locator('nav a[href="#ecosystem"]').first()).toBeAttached();
+      await page.locator('#footer').scrollIntoViewIfNeeded();
+      await expect(page.locator('footer a[href="#ecosystem"]').first()).toBeAttached();
+      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+        'href',
+        'https://litwa.dev/'
+      );
+      await expect(page.locator('meta[name="robots"]')).not.toHaveAttribute('content', /noindex/);
+      for (const product of products) {
+        const card = page.locator(`[data-product-id="${product.id}"]`);
+        await expect(card.getByRole('heading', { name: product.name, exact: true })).toBeAttached();
+        await expect(card).toContainText(product.role.en);
+        const link = card.locator(`a[href="${product.url}"]`).first();
+        await expect(link).toBeAttached();
+        expect(await link.getAttribute('rel')).not.toMatch(/nofollow|sponsored/);
+      }
+      const observe = page.locator('[data-product-id="observeifynow"]');
+      await expect(observe).toContainText('remote controls and new purchases are unavailable');
+      await expect(observe.getByRole('link')).toHaveText('ObserveifyNow');
+      if (javaScriptEnabled) {
+        await page.evaluate(() => {
+          localStorage.setItem('preferred-language', 'pl');
+        });
+        await page.reload();
+        await expect(page.locator('html')).toHaveAttribute('lang', 'pl');
+        await expect(observe).toContainText(
+          products.find((product) => product.id === 'observeifynow')!.role.pl
+        );
+        await expect(page.locator('[data-product-id="rentifynow"] a')).toHaveAttribute(
+          'href',
+          'https://rentifynow.com/pl/'
+        );
+      }
+    } finally {
+      await context.close();
+    }
+  });
+}
 
 test('serves the complete portfolio and working discovery links without JavaScript', async ({
   browser,
@@ -32,7 +82,7 @@ test('serves the complete portfolio and working discovery links without JavaScri
     await expect(page.locator('#certifications .certification-badge-fallback')).toHaveCount(4);
     await expect(page.locator('#certifications img')).toHaveCount(0);
     await expect(page.locator('footer')).toContainText('bartosz.litwa@proton.me');
-    await expect(page.locator('a[href="https://doifynow.com"]').first()).toBeVisible();
+    await expect(page.locator('a[href="https://doifynow.com/"]').first()).toBeVisible();
     await expect(page.locator('a[href="/Bartosz_Litwa_CV.pdf"]')).toBeVisible();
 
     const brokenFragments = await page
@@ -114,9 +164,14 @@ test('keeps factual identity schema without unsupported software rich-result cla
     }
   );
   const family = graph.find((item: { '@type': string }) => item['@type'] === 'ItemList');
+  expect(family.numberOfItems).toBe(products.length - 1);
   expect(family.numberOfItems).toBe(family.itemListElement.length);
   for (const entry of family.itemListElement) {
     expect(entry.item['@type']).toBe('Thing');
+    const product = products.find((product) => product.name === entry.item.name);
+    expect(product).toBeDefined();
+    expect(entry.item.url).toBe(product!.url);
+    expect(entry.item.description).toBe(product!.role.en);
     await expect(page.locator('.product-card h4').filter({ hasText: entry.item.name })).toHaveCount(
       1
     );

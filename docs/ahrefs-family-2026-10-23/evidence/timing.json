@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-10-23T13:24:07Z",
+  "method": "Three sequential anonymous bounded GETs; warmed route and this network only; not Ahrefs timing or a performance benchmark",
+  "samples": [
+    {
+      "status": 200,
+      "ttfbSeconds": 0.21,
+      "totalSeconds": 0.21,
+      "bytes": 43699
+    },
+    {
+      "status": 200,
+      "ttfbSeconds": 0.125,
+      "totalSeconds": 0.125,
+      "bytes": 43699
+    },
+    {
+      "status": 200,
+      "ttfbSeconds": 0.071,
+      "totalSeconds": 0.072,
+      "bytes": 43699
+    }
+  ]
+}

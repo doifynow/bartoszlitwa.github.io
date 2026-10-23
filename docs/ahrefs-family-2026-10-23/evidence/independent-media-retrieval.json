@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Before Desktop Family",
+    "fullRetrievalSha256Match": true
+  },
+  {
+    "title": "Before Mobile Family",
+    "fullRetrievalSha256Match": true
+  },
+  {
+    "title": "After Mobile Observe",
+    "fullRetrievalSha256Match": true
+  },
+  {
+    "title": "After Desktop Family Diagram",
+    "fullRetrievalSha256Match": true
+  },
+  {
+    "title": "After Desktop Family Top",
+    "fullRetrievalSha256Match": true
+  },
+  {
+    "title": "After Desktop Observe",
+    "fullRetrievalSha256Match": true
+  },
+  {
+    "title": "Family Discovery Workflow",
+    "fullRetrievalSha256Match": true,
+    "rangeVerified": true
+  },
+  {
+    "title": "Before Desktop Family Diagram",
+    "fullRetrievalSha256Match": true
+  }
+]

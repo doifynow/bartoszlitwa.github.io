@@ -1,0 +1,118 @@
+{
+  "baseMain": "622a8faba1b28ce21d0575fea6d4d988814ac155",
+  "bundle": "bartoszlitwa.github.io--complete-native-inputs.json.txt",
+  "sha256": "4a972ce226f6180654426ee5e15a0569abffbf0643c5f66eb47a4160e45bd856",
+  "categories": [
+    {
+      "category": "Page has links to redirect",
+      "occurrence": 0,
+      "affectedURLs": ["https://litwa.dev/"],
+      "columns": [
+        "pageRating",
+        "url",
+        "traffic",
+        "httpCode",
+        "contentType",
+        "depth",
+        "linksInternal3xx",
+        "linksCountInternal3xx",
+        "linksExternal3xx",
+        "linksCountExternal3xx"
+      ],
+      "displayedAndExpectedRowsMatch": true,
+      "exactTargetURLInlinkJoinMatches": true
+    },
+    {
+      "category": "Redirected page has no incoming internal links",
+      "occurrence": 0,
+      "affectedURLs": ["https://litwa.dev/"],
+      "columns": [
+        "pageRating",
+        "url",
+        "traffic",
+        "httpCode",
+        "contentType",
+        "depth",
+        "incomingRedirect",
+        "incomingLinks"
+      ],
+      "displayedAndExpectedRowsMatch": true,
+      "exactTargetURLInlinkJoinMatches": true
+    },
+    {
+      "category": "3XX redirect",
+      "occurrence": 0,
+      "affectedURLs": ["http://litwa.dev/", "https://www.litwa.dev/", "http://www.litwa.dev/"],
+      "columns": [
+        "pageRating",
+        "url",
+        "traffic",
+        "httpCode",
+        "redirect",
+        "redirectChainUrls",
+        "isRedirectLoop",
+        "incomingAllLinks",
+        "incomingRedirect",
+        "origin"
+      ],
+      "displayedAndExpectedRowsMatch": true,
+      "exactTargetURLInlinkJoinMatches": true
+    },
+    {
+      "category": "HTTP to HTTPS redirect",
+      "occurrence": 0,
+      "affectedURLs": ["http://litwa.dev/", "http://www.litwa.dev/"],
+      "columns": [
+        "pageRating",
+        "url",
+        "traffic",
+        "httpCode",
+        "redirectChainUrls",
+        "isRedirectLoop",
+        "incomingAllLinks",
+        "incomingRedirect",
+        "origin"
+      ],
+      "displayedAndExpectedRowsMatch": true,
+      "exactTargetURLInlinkJoinMatches": true
+    },
+    {
+      "category": "Slow page",
+      "occurrence": 0,
+      "affectedURLs": ["https://litwa.dev/"],
+      "columns": [
+        "pageRating",
+        "url",
+        "traffic",
+        "httpCode",
+        "size",
+        "timeToFirstByte",
+        "loadingTime",
+        "depth",
+        "compliant",
+        "incomingAllLinks",
+        "origin"
+      ],
+      "displayedAndExpectedRowsMatch": true,
+      "exactTargetURLInlinkJoinMatches": true
+    },
+    {
+      "category": "External 3XX redirect",
+      "occurrence": 0,
+      "affectedURLs": ["https://rentifynow.com/"],
+      "columns": [
+        "pageRating",
+        "url",
+        "traffic",
+        "httpCode",
+        "contentType",
+        "depth",
+        "redirect",
+        "incomingAllLinks"
+      ],
+      "displayedAndExpectedRowsMatch": true,
+      "exactTargetURLInlinkJoinMatches": true
+    }
+  ],
+  "note": "Raw bundle kept byte-for-byte. Query columns decoded; expanded UI row cells preserved rather than blindly zipped to query columns. HTTP and HTTPS remain separate. All original CSV hashes rechecked separately. No UI/runtime changes. The .json.txt suffix keeps raw transferred JSON bytes outside the repository formatter glob."
+}

@@ -23,6 +23,8 @@ const VERIFIED_HOSTED_PRODUCT_URLS = {
 
 const openPortfolio = async (page: Page) => {
   await page.goto('/', { waitUntil: 'domcontentloaded' });
+  // Prerendered headings appear before React attaches the interactive controls.
+  await expect(page.locator('html')).toHaveAttribute('data-theme', /^(light|dark)$/);
   await expect(page.locator('main')).toBeVisible();
   await expect(page.getByRole('heading', { level: 1, name: /Bartosz Litwa/i })).toBeVisible();
 };

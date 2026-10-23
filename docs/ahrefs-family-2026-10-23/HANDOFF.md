@@ -82,18 +82,25 @@ independent Health/DR scores are unavailable.
 
 ## All six current Ahrefs categories
 
-Counts overlap and are not summed. Exact fresh drilldown URLs/inlinks were not included in the
-coordinator's category summary; focused drilldowns were requested. The explicit candidate URLs
-below are current reproductions, not invented attribution to an unseen Ahrefs row.
+Counts overlap and are not summed. Root subsequently supplied complete native 25-row internal
+URL and 36-row all-links CSVs. Both are preserved byte-for-byte with independently verified
+SHA-256 hashes. The [compact exact URL/category/source/action matrix](URL-MATRIX.md) supersedes
+the initial provisional attribution. All 25 exported URLs were reread anonymously; statuses
+match the native dataset (22 resources/pages at 200, three domain aliases at 301).
 
-| Category / count                                   | Exact affected URL or attribution limit                                                                          | Current anonymous response                                                    | Source / merged fix                                                            | Classification and action / owner                                                                                                                              |
-| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Links to redirect / 1                              | Fresh exact inlink unavailable. Current portfolio family links to `https://rentifynow.com` twice                 | Rent root 301 → `https://rentifynow.com/pl/` → 200; final self-canonical      | `src/data/products.json`; generated and mounted from the same data             | Reproduced outgoing redirect: use final `/pl/` URL in this PR. No internal redirecting href reproduced; coordinator owns exact Ahrefs edge attribution         |
-| Redirected page has no incoming internal links / 1 | Fresh row URL unavailable; tested aliases `http://litwa.dev/`, `http://www.litwa.dev/`, `https://www.litwa.dev/` | Each 301 directly to `https://litwa.dev/`, which returns 200                  | Existing edge canonicalization; sitemap lists only HTTPS apex                  | Intentional aliases require no new internal links. Preserve routing; coordinator supplies exact row if it differs                                              |
-| 3XX redirects / 3                                  | `http://litwa.dev/`, `http://www.litwa.dev/`, `https://www.litwa.dev/` are the three reproduced candidates       | Each single-hop 301 to canonical 200                                          | Existing deployment policy; no source change needed                            | Intentional domain normalization; no redirect removal or infrastructure change                                                                                 |
-| HTTP to HTTPS / 2                                  | `http://litwa.dev/`, `http://www.litwa.dev/`                                                                     | 301 directly to canonical HTTPS apex                                          | Existing edge policy                                                           | Intentional secure transport; retain. Hosting owner only if future concrete failure reproduced                                                                 |
-| Slow page / 1                                      | Fresh exact URL/timing unavailable; canonical `https://litwa.dev/` sampled                                       | Three sequential 200 GETs; total 0.210 / 0.125 / 0.072 seconds on this worker | Existing prerender #59 and image fixes #62; current production bytes inspected | Not reproduced in modest samples; this is not Ahrefs timing or proof of a regression. Preserve source; coordinator owns exact timing/URL and later measurement |
-| External redirect / 1                              | Fresh exact edge unavailable; reproduced `https://rentifynow.com/` → `/pl/`                                      | 301 → final canonical HTML 200                                                | Product family data changed here; existing LinkedIn profile links retained     | Correct evidenced locale redirect. Do not claim the unseen Ahrefs row was cleared or alter third-party profiles speculatively                                  |
+| Current category / count                            | Native URL / source attribution                                                                                                       | Current response and action / owner                                                                                                                                                                   |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Links to redirect / 1                               | Exact exported Href: `https://litwa.dev/` → `https://rentifynow.com/`; source 200, target 301, anchor `Visit product`, nofollow false | Root 301 → canonical `/pl/` 200. This PR uses direct final `/pl/` URL; portfolio owner. Dataset identifies this edge; focused Actual-row membership is separate.                                      |
+| Redirected page without incoming internal links / 1 | `http://litwa.dev/`, `http://www.litwa.dev/`, `https://www.litwa.dev/` each have zero native href inlinks                             | Each 301 directly to canonical 200; intentional topology. No links to aliases added. Coordinator owns exact single-row category attribution.                                                          |
+| 3XX / 3                                             | All three exact aliases above appear as Redirect rows to `https://litwa.dev/`                                                         | All current 301s match; preserve canonicalization and legitimate inbound traffic.                                                                                                                     |
+| HTTP → HTTPS / 2                                    | Native `http://litwa.dev/` and `http://www.litwa.dev/`                                                                                | Both 301 directly to HTTPS apex; intentional transport policy, preserve.                                                                                                                              |
+| Slow page / 1                                       | Native homepage 1,572 ms; exact Actual-category assignment not encoded in the URL CSV                                                 | Current bounded worker samples 0.210/0.125/0.072 seconds; do not equate measurements or infer source regression. Existing #59/#62 fixes preserved; coordinator owns focused timing/category readback. |
+| External redirect / 1                               | Exact exported homepage → RentifyNow root 301 edge                                                                                    | Correct direct localized canonical link here; do not invent another target or claim category clearance before a later crawl.                                                                          |
+
+The full native matrix also distinguishes third-party robots blocks (LinkedIn and analytics),
+asset indexability, the explicit exported sitemap edge, and page-level referring-domain fields
+from domain-level DR observations. Native title/description/H1 lengths are observations, not
+copy-padding targets. AI/schema/sitemap category membership is not inferred from thresholds.
 
 No broken-image categories exist in today's completed crawl. [Twenty-one current first-party assets](evidence/public-assets.json)
 returned 200, including script/styles/images/discovery assets. Root canonical is singular, robots
@@ -168,3 +175,25 @@ advisories, below the maintained high-severity gate; no dependency versions were
 Self-hosted PR CI, reviews, mergeability, exact head deadline, normal merge and clean worktree
 retirement are tracked in this thread and durable task state. No production release or higher
 Health/AI/DR score is claimed. A required pending check is not called green.
+
+## Native-export integration and CI repair
+
+The exports supplied after PR creation are preserved as native CSVs, with 25/36 rows and hashes
+matching root's verified originals. No repeated export request or new crawl was made. The new
+URL matrix records every native URL, current status and exact incoming source/link type; raw
+AI/schema issue membership remains outside these datasets.
+
+Initial PR head `7db9d74ee4f575074cf49f02d4ec0b9a3e7350ef` CI ran on provisioned self-hosted
+runner `fleetsetup-t3code-2`: 66 browser cases passed, two were skipped, one tablet language-menu
+focus case failed. The failure is consistent with its helper accepting prerendered headings before the
+interactive app was ready, allowing an early click to miss the mounted control. The helper now waits for the
+existing `html[data-theme]` attribute, set by the mounted theme effect. Runtime source and UI
+are unchanged by this repair; previous build and NAS proof remain relevant. Focused verification
+and the repaired head are recorded in the adjacent verification receipt and durable watch state.
+The failed head is not green and cannot use a pending-CI fallback.
+
+Repair verification: the failed menu workflow and both family-discovery modes passed across
+desktop/tablet/mobile: **9 passed in 29.4 seconds**, using two workers. Narrow ESLint/format and
+diff checks passed. Source, dependencies and build configuration are unchanged; the prior
+maintained build, unit/Nginx results and visual proof are reused. The new commit restarts the
+head-specific CI budget; it does not reset the old head's deadline or treat its failure as green.

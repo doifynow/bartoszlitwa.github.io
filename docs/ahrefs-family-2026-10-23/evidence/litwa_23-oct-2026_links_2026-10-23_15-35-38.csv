@@ -1,0 +1,37 @@
+Link type,Is nofollow,Source URL,Source HTTP status code,Target URL,Target HTTP status code,Target no-crawl reason,Anchor,Alt attribute,Hreflang attribute,Is source canonical,Is source noindex,Is target canonical,Is target noindex,Is link self-referencing
+Href link,false,https://litwa.dev/,200,https://doifynow.com/,200,,Visit DoifyNow,,,true,false,true,false,false
+Sitemap URL,false,https://litwa.dev/sitemap.xml,200,https://litwa.dev/,200,,,,,true,false,true,false,false
+CSS,false,https://litwa.dev/,200,https://litwa.dev/assets/Certifications-CnZnbili.css,200,,,,,true,false,true,false,false
+Redirect,false,https://www.litwa.dev/,301,https://litwa.dev/,200,,,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://goalifynow.com/,200,,Visit product,,,true,false,true,false,false
+Redirect,false,http://www.litwa.dev/,301,https://litwa.dev/,200,,,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://support.doifynow.com/,200,,SupportifyNow,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://deployifynow.com/,200,,Visit product,,,true,false,true,false,false
+CSS,false,https://litwa.dev/,200,https://litwa.dev/assets/SimpleBanner-CGcP7Mxj.css,200,,,,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/assets/codedProjects-BB_1SCkd.png,200,,,Coded Projects company logo,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/assets/pzpl-D-C-Blt8.png,200,,,Polish Rope Pulling Association company logo,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/rentifynow.png,200,,,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://houseifynow.com/,200,,Visit product,,,true,false,true,false,false
+CSS,false,https://litwa.dev/,200,https://litwa.dev/assets/Experience-D5YUZW1r.css,200,,,,,true,false,true,false,false
+JavaScript,false,https://litwa.dev/,200,https://litwa.dev/assets/index-ByKdiF2U.js,200,,,,,true,false,true,false,false
+Redirect,false,http://litwa.dev/,301,https://litwa.dev/,200,,,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://litwa.dev/Bartosz_Litwa_CV.pdf,200,,Download CV,,,true,false,true,false,false
+Canonical,false,https://litwa.dev/,200,https://litwa.dev/,200,,,,,true,false,true,false,true
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/insightifynow.png,200,,,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://www.linkedin.com/in/bartoszlitwa/,,Blocked by robots.txt,Let's Connect,,,true,false,,,false
+Href link,false,https://litwa.dev/,200,https://github.com/BartoszLitwa,200,,,,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/doifynow.png,200,,,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://insight.doifynow.com/,200,,InsightifyNow,,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/leadifynow.svg,200,,,,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/houseifynow.png,200,,,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://leadify.doifynow.com/,200,,Visit product,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://postifynow.app/,200,,Visit product,,,true,false,true,false,false
+JavaScript,false,https://litwa.dev/,200,https://analytics.doifynow.com/script.js,,Blocked by robots.txt,,,,true,false,,,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/assets/logo-DvyJHJ9Q.webp,200,,,Bartosz Litwa logo,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/supportifynow.png,200,,,,,true,false,true,false,false
+CSS,false,https://litwa.dev/,200,https://litwa.dev/assets/index-Cb7Wq3tL.css,200,,,,,true,false,true,false,false
+Href link,false,https://litwa.dev/,200,https://rentifynow.com/,301,,Visit product,,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/deployifynow.svg,200,,,,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/goalifynow.png,200,,,,,true,false,true,false,false
+CSS,false,https://litwa.dev/,200,https://litwa.dev/assets/Footer-BNTT43th.css,200,,,,,true,false,true,false,false
+Image,false,https://litwa.dev/,200,https://litwa.dev/product-icons/postifynow.png,200,,,,,true,false,true,false,false

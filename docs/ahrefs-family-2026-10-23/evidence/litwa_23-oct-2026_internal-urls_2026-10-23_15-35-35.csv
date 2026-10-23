@@ -1,0 +1,30 @@
+PR,URL,HTTP status code,Content type,Is indexable page,Title,Title length,Meta description,Meta description length,H1,H1 length,Meta robots,Robots information in HTTP headers,Canonical URL,Canonical URL code,Size (bytes),No. of content words,Depth,No. of href inlinks,No. of inlinks dofollow,No. of internal outlinks,No. of external outlinks,Loading time (ms),Redirect URL,Redirect URL code,Final redirect URL,Final redirect URL code,Organic traffic,No. of backlinks,No. of dofollow backlinks,No. of nofollow backlinks,No. of referring domains,No. of referring pages
+40,https://litwa.dev/,200,text/html,true,Bartosz Litwa — AI-Native Company Builder,41,"Bartosz Litwa builds DoifyNow, an AI-native company connecting RentifyNow, PostifyNow, and a focused family of products.",120,"Hi, I'm Bartosz Litwa",21,"follow
+index
+max-image-preview:large
+max-snippet:-1
+max-video-preview:-1",,https://litwa.dev/,200,11918,739,0,0,0,1,11,1572,,,,,0,741,88,653,689,741
+7,https://litwa.dev/assets/logo-DvyJHJ9Q.webp,200,image/webp,false,,,,,,,,,,,10630,0,1,0,0,0,0,1194,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/Experience-D5YUZW1r.css,200,text/css,false,,,,,,,,,,,0,0,1,0,0,0,0,513,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/pzpl-D-C-Blt8.png,200,image/png,false,,,,,,,,,,,13154,0,1,0,0,0,0,721,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/Footer-BNTT43th.css,200,text/css,false,,,,,,,,,,,0,0,1,0,0,0,0,648,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/goalifynow.png,200,image/png,false,,,,,,,,,,,26186,0,1,0,0,0,0,520,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/supportifynow.png,200,image/png,false,,,,,,,,,,,12305,0,1,0,0,0,0,1065,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/doifynow.png,200,image/png,false,,,,,,,,,,,18786,0,1,0,0,0,0,1128,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/Certifications-CnZnbili.css,200,text/css,false,,,,,,,,,,,0,0,1,0,0,0,0,1712,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/houseifynow.png,200,image/png,false,,,,,,,,,,,167782,0,1,0,0,0,0,486,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/index-ByKdiF2U.js,200,application/javascript,false,,,,,,,,,,,0,0,1,0,0,0,0,1379,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/rentifynow.png,200,image/png,false,,,,,,,,,,,92954,0,1,0,0,0,0,691,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/insightifynow.png,200,image/png,false,,,,,,,,,,,60866,0,1,0,0,0,0,1092,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/leadifynow.svg,200,image/svg+xml,false,,,,,,,,,,,0,0,1,0,0,0,0,718,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/postifynow.png,200,image/png,false,,,,,,,,,,,17191,0,1,0,0,0,0,595,,,,,0,0,0,0,0,0
+7,https://litwa.dev/product-icons/deployifynow.svg,200,image/svg+xml,false,,,,,,,,,,,0,0,1,0,0,0,0,1078,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/codedProjects-BB_1SCkd.png,200,image/png,false,,,,,,,,,,,5022,0,1,0,0,0,0,1001,,,,,0,0,0,0,0,0
+7,https://litwa.dev/Bartosz_Litwa_CV.pdf,200,application/pdf,false,,,,,,,,,,,2682,0,1,1,1,0,0,1378,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/index-Cb7Wq3tL.css,200,text/css,false,,,,,,,,,,,0,0,1,0,0,0,0,1457,,,,,0,0,0,0,0,0
+7,https://litwa.dev/assets/SimpleBanner-CGcP7Mxj.css,200,text/css,false,,,,,,,,,,,0,0,1,0,0,0,0,747,,,,,0,0,0,0,0,0
+0,http://litwa.dev/,301,text/html; charset=utf-8,false,,,,,,,,,,,167,0,0,0,0,0,0,299,https://litwa.dev/,200,https://litwa.dev/,200,0,7,7,0,7,7
+0,https://www.litwa.dev/,301,text/html; charset=utf-8,false,,,,,,,,,,,167,0,0,0,0,0,0,410,https://litwa.dev/,200,https://litwa.dev/,200,0,0,0,0,0,0
+0,http://www.litwa.dev/,301,text/html; charset=utf-8,false,,,,,,,,,,,167,0,0,0,0,0,0,316,https://litwa.dev/,200,https://litwa.dev/,200,0,0,0,0,0,0
+0,https://litwa.dev/sitemap.xml,200,text/xml,false,,,,,,,,,,,205,1,,0,0,0,0,1064,,,,,0,0,0,0,0,0
+0,https://litwa.dev/robots.txt,200,text/plain,false,,,,,,,,,,,71,0,,0,0,0,0,1007,,,,,0,0,0,0,0,0
